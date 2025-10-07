@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive 3D modeling and printing resources for art students - model repositories, conversion tools, and AI generators">
+    <title>3D Printing Resources - Maker Station</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <span>Maker Station</span>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav nav-menu" aria-label="Main navigation">
+                <a href="../index.html" class="nav__link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav__link dropdown-toggle">Equipment & Tools</a>
+                    <div class="dropdown-menu">
+                        <a href="laser-cutting.html" class="dropdown-item">Laser Cutting</a>
+                        <a href="3d-printing.html" class="dropdown-item dropdown-item--active">3D Printing</a>
+                        <a href="silhouette.html" class="dropdown-item">Silhouette Cutting</a>
+                        <a href="rotosonic-nucleus.html" class="dropdown-item">Rotosonic Nucleus</a>
+                        <a href="clay-printer.html" class="dropdown-item">Clay Printer</a>
+                        <a href="3d-scanner.html" class="dropdown-item">3D Scanner</a>
+                    </div>
+                </div>
+                <a href="booking.html" class="nav__link">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>3D Printing</h1>
+                <p>Additive Manufacturing - Training & Resource Guide</p>
+            </div>
+        </section>
+
+        <!-- Dropdown Sections -->
+        <section class="dropdown-sections">
+            <div class="container">
+
+                <!-- Introduction Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('introduction')">
+                        <h2>Introduction</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="introduction">
+                        <h3>What is 3D Printing?</h3>
+                        <p>3D printing, also known as additive manufacturing, creates three-dimensional objects by depositing material layer by layer based on digital models. This process allows for complex geometries and customized designs that would be difficult or impossible with traditional manufacturing methods.</p>
+
+                        <h4>How it Works:</h4>
+                        <p>The printer reads a digital 3D model file and slices it into thousands of thin layers. It then builds the object by depositing heated plastic filament, resin, or other materials layer by layer until the complete object is formed.</p>
+
+                        <h4>Applications:</h4>
+                        <ul>
+                            <li>Rapid prototyping and concept models</li>
+                            <li>Custom jewelry and fashion accessories</li>
+                            <li>Educational models and teaching aids</li>
+                            <li>Replacement parts and functional objects</li>
+                            <li>Artistic sculptures and installations</li>
+                            <li>Medical models and prosthetics</li>
+                        </ul>
+
+                        <div class="info-box highlight">
+                            <h4>Material Options</h4>
+                            <p>Common materials include PLA (beginner-friendly), ABS (durable), PETG (chemical resistant), and specialty filaments like wood-fill, metal-fill, and flexible materials.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('resources')">
+                        <h2>Design Resources</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="resources">
+
+                        <!-- Model Repositories & Libraries -->
+                        <div class="resource-category" id="model-repositories">
+                            <h4>Model Repositories & Libraries</h4>
+                    <p class="category-intro">
+                        Extensive collections of ready-to-print 3D models - perfect for students who want to print immediately or learn by studying existing designs.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Thingiverse -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.thingiverse.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Thingiverse</h3>
+                            <p>World's largest 3D printing community with millions of free models. The go-to resource for 3D printing files.</p>
+                            <ul>
+                                <li>Millions of free models</li>
+                                <li>User-submitted designs</li>
+                                <li>Remix & customize</li>
+                                <li>Community support</li>
+                            </ul>
+                            <a href="https://www.thingiverse.com/" target="_blank" class="btn btn-primary">Browse Thingiverse</a>
+                        </div>
+
+                        <!-- Printables -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.printables.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Printables</h3>
+                            <p>Modern 3D model repository by Prusa with high-quality, tested models and active community.</p>
+                            <ul>
+                                <li>Quality-focused library</li>
+                                <li>Prusa-tested models</li>
+                                <li>Designer rewards system</li>
+                                <li>Active community</li>
+                            </ul>
+                            <a href="https://www.printables.com/" target="_blank" class="btn btn-primary">Browse Printables</a>
+                        </div>
+
+                        <!-- MyMiniFactory Scan the World -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.myminifactory.com/scantheworld/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Scan the World</h3>
+                            <p>Cultural heritage 3D scans from museums worldwide. Print famous sculptures and artifacts.</p>
+                            <ul>
+                                <li>Museum artifact scans</li>
+                                <li>Cultural preservation</li>
+                                <li>Historical sculptures</li>
+                                <li>Educational focus</li>
+                            </ul>
+                            <a href="https://www.myminifactory.com/scantheworld/full-collection/" target="_blank" class="btn btn-primary">Explore Collection</a>
+                        </div>
+
+                        <!-- NASA 3D Models -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://nasa3d.arc.nasa.gov/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>NASA 3D Models</h3>
+                            <p>Official NASA 3D models of spacecraft, astronomical objects, and space exploration.</p>
+                            <ul>
+                                <li>Official NASA models</li>
+                                <li>Spacecraft & satellites</li>
+                                <li>Astronomical objects</li>
+                                <li>Educational resources</li>
+                            </ul>
+                            <a href="https://nasa3d.arc.nasa.gov/models/printable" target="_blank" class="btn btn-primary">Browse NASA Models</a>
+                        </div>
+
+                        <!-- 3D NIH -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://3d.nih.gov/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>3D NIH</h3>
+                            <p>National Institutes of Health biomedical 3D models for scientific and educational use.</p>
+                            <ul>
+                                <li>Biomedical models</li>
+                                <li>Scientific accuracy</li>
+                                <li>Educational focus</li>
+                                <li>Research applications</li>
+                            </ul>
+                            <a href="https://3d.nih.gov/discover?sort=date_desc" target="_blank" class="btn btn-primary">Explore NIH Models</a>
+                        </div>
+
+                        <!-- 3D Smithsonian -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://3d.si.edu/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Smithsonian 3D</h3>
+                            <p>Digitized artifacts and specimens from Smithsonian museums for education and research.</p>
+                            <ul>
+                                <li>Museum collections</li>
+                                <li>Historical artifacts</li>
+                                <li>Natural specimens</li>
+                                <li>High-quality scans</li>
+                            </ul>
+                            <a href="https://3d.si.edu/" target="_blank" class="btn btn-primary">Explore Smithsonian</a>
+                        </div>
+
+                        <!-- Sketchfab British Museum -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://sketchfab.com/britishmuseum"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>British Museum on Sketchfab</h3>
+                            <p>British Museum collection of 3D scanned artifacts and historical objects.</p>
+                            <ul>
+                                <li>Museum artifacts</li>
+                                <li>Historical objects</li>
+                                <li>Cultural heritage</li>
+                                <li>Educational access</li>
+                            </ul>
+                            <a href="https://sketchfab.com/britishmuseum/models" target="_blank" class="btn btn-primary">View Collection</a>
+                        </div>
+
+                        <!-- CGTrader -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.cgtrader.com/"></div>
+                            <span class="tool-badge premium">Free & Premium</span>
+                            <h3>CGTrader</h3>
+                            <p>Professional 3D model marketplace with free and premium models for various applications.</p>
+                            <ul>
+                                <li>Professional models</li>
+                                <li>Free & paid options</li>
+                                <li>Various formats</li>
+                                <li>Commercial use available</li>
+                            </ul>
+                            <a href="https://www.cgtrader.com/" target="_blank" class="btn btn-secondary">Browse CGTrader</a>
+                        </div>
+
+                        <!-- Free3D -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://free3d.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Free3D</h3>
+                            <p>Large collection of free 3D models in various formats for different applications.</p>
+                            <ul>
+                                <li>Extensive free library</li>
+                                <li>Multiple formats</li>
+                                <li>Various categories</li>
+                                <li>Regular updates</li>
+                            </ul>
+                            <a href="https://free3d.com/" target="_blank" class="btn btn-primary">Browse Free3D</a>
+                        </div>
+
+                        <!-- GrabCAD -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://grabcad.com/library"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>GrabCAD</h3>
+                            <p>Engineering-focused CAD model library with mechanical parts and assemblies.</p>
+                            <ul>
+                                <li>Engineering models</li>
+                                <li>Mechanical parts</li>
+                                <li>CAD file formats</li>
+                                <li>Professional community</li>
+                            </ul>
+                            <a href="https://grabcad.com/library" target="_blank" class="btn btn-primary">Browse GrabCAD</a>
+                        </div>
+
+                        <!-- Poly Haven Models -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://polyhaven.com/models"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Poly Haven Models</h3>
+                            <p>High-quality 3D models with CC0 license - completely free for any use.</p>
+                            <ul>
+                                <li>CC0 public domain</li>
+                                <li>High-quality models</li>
+                                <li>No restrictions</li>
+                                <li>Professional assets</li>
+                            </ul>
+                            <a href="https://polyhaven.com/models" target="_blank" class="btn btn-primary">Browse Models</a>
+                        </div>
+
+                        <!-- BlendSwap -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.blendswap.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>BlendSwap</h3>
+                            <p>Community for sharing Blender models - free 3D assets created in Blender.</p>
+                            <ul>
+                                <li>Blender-native files</li>
+                                <li>Community sharing</li>
+                                <li>Creative Commons</li>
+                                <li>Free downloads</li>
+                            </ul>
+                            <a href="https://www.blendswap.com/blends" target="_blank" class="btn btn-primary">Browse BlendSwap</a>
+                        </div>
+
+                        <!-- TurboSquid -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.turbosquid.com"></div>
+                            <span class="tool-badge premium">Premium</span>
+                            <h3>TurboSquid</h3>
+                            <p>Professional 3D model marketplace with high-quality assets (some free models available).</p>
+                            <ul>
+                                <li>Professional quality</li>
+                                <li>Extensive library</li>
+                                <li>Some free models</li>
+                                <li>Commercial licensing</li>
+                            </ul>
+                            <a href="https://www.turbosquid.com" target="_blank" class="btn btn-secondary">Visit TurboSquid</a>
+                        </div>
+
+                        <!-- MorphoSource -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.morphosource.org/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>MorphoSource</h3>
+                            <p>Digital repository of 3D biological specimens for research and education.</p>
+                            <ul>
+                                <li>Biological specimens</li>
+                                <li>Scientific accuracy</li>
+                                <li>Research quality</li>
+                                <li>Educational access</li>
+                            </ul>
+                            <a href="https://www.morphosource.org/?locale=en" target="_blank" class="btn btn-primary">Explore MorphoSource</a>
+                        </div>
+
+                        <!-- Enabling the Future -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://enablingthefuture.org/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Enabling the Future</h3>
+                            <p>3D printed prosthetic hands and assistive devices - social impact 3D printing.</p>
+                            <ul>
+                                <li>Prosthetic designs</li>
+                                <li>Assistive devices</li>
+                                <li>Social impact</li>
+                                <li>Open source</li>
+                            </ul>
+                            <a href="https://enablingthefuture.org/" target="_blank" class="btn btn-primary">Visit Project</a>
+                        </div>
+
+                        <!-- Cults3D -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://cults3d.com/en"></div>
+                            <span class="tool-badge premium">Free & Premium</span>
+                            <h3>Cults3D</h3>
+                            <p>Independent marketplace with 3D printing files (STL, OBJ, 3MF). Designer-focused platform with 80% revenue to creators.</p>
+                            <ul>
+                                <li>Free & paid models</li>
+                                <li>Designer-friendly (80% revenue)</li>
+                                <li>Multiple file formats</li>
+                                <li>Community marketplace</li>
+                            </ul>
+                            <a href="https://cults3d.com/en" target="_blank" class="btn btn-secondary">Browse Cults3D</a>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Conversion & Generator Tools -->
+                        <div class="resource-category" id="conversion-tools">
+                            <h4>Conversion & Generator Tools</h4>
+                    <p class="category-intro">
+                        Tools to convert images, text, and maps into 3D printable STL files - create custom models without 3D modeling skills.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Image to STL -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://imagetostl.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Image to STL</h3>
+                            <p>Convert 2D images into 3D relief models. Perfect for creating custom lithophanes and embossed designs.</p>
+                            <ul>
+                                <li>Image-to-3D conversion</li>
+                                <li>Lithophane creation</li>
+                                <li>Relief models</li>
+                                <li>Instant STL export</li>
+                            </ul>
+                            <a href="https://imagetostl.com/" target="_blank" class="btn btn-primary">Try Image to STL</a>
+                        </div>
+
+                        <!-- ItsLitho -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://tool.itslitho.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>ItsLitho</h3>
+                            <p>Specialized lithophane creator with advanced features for photo-to-3D conversion.</p>
+                            <ul>
+                                <li>Lithophane optimization</li>
+                                <li>Photo conversion</li>
+                                <li>Custom shapes</li>
+                                <li>Print-ready files</li>
+                            </ul>
+                            <a href="https://tool.itslitho.com/CreateModel" target="_blank" class="btn btn-primary">Create Lithophane</a>
+                        </div>
+
+                        <!-- Map2STL -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://map2stl.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Map2STL</h3>
+                            <p>Convert any location from Google Maps into 3D terrain models for printing.</p>
+                            <ul>
+                                <li>Terrain model creation</li>
+                                <li>Location-based 3D</li>
+                                <li>Topographic models</li>
+                                <li>Custom area selection</li>
+                            </ul>
+                            <a href="https://map2stl.com/" target="_blank" class="btn btn-primary">Create Terrain Model</a>
+                        </div>
+
+                        <!-- STL Gears Generator -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.stlgears.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>STL Gears Generator</h3>
+                            <p>Generate precise gears for 3D printing with customizable parameters.</p>
+                            <ul>
+                                <li>Parametric gear generation</li>
+                                <li>Multiple gear types</li>
+                                <li>Print-ready STL files</li>
+                                <li>Mechanical accuracy</li>
+                            </ul>
+                            <a href="https://www.stlgears.com/generators/3dprint" target="_blank" class="btn btn-primary">Generate Gears</a>
+                        </div>
+
+                        <!-- Voronator -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.voronator.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Voronator</h3>
+                            <p>Create Voronoi pattern models for organic, decorative 3D printed objects.</p>
+                            <ul>
+                                <li>Voronoi patterns</li>
+                                <li>Organic structures</li>
+                                <li>Decorative designs</li>
+                                <li>STL export</li>
+                            </ul>
+                            <a href="https://www.voronator.com/" target="_blank" class="btn btn-primary">Create Voronoi Model</a>
+                        </div>
+
+                        <!-- 3D Encoder -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://3dencoder.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>3D Encoder</h3>
+                            <p>Convert and encode 3D models between different formats with ease.</p>
+                            <ul>
+                                <li>Format conversion</li>
+                                <li>Multiple file types</li>
+                                <li>Quick encoding</li>
+                                <li>Web-based tool</li>
+                            </ul>
+                            <a href="https://3dencoder.com/" target="_blank" class="btn btn-primary">Convert Models</a>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Software & Slicers -->
+                        <div class="resource-category" id="software">
+                            <h4>Software & Slicers</h4>
+                    <p class="category-intro">
+                        Essential software for 3D modeling and preparing models for printing (slicing).
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Blender -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.blender.org/"></div>
+                            <span class="tool-badge free">Free Open Source</span>
+                            <h3>Blender</h3>
+                            <p>Professional 3D creation suite - modeling, sculpting, animation, and rendering. Industry-standard free software.</p>
+                            <ul>
+                                <li>Complete 3D suite</li>
+                                <li>Professional capabilities</li>
+                                <li>Extensive community</li>
+                                <li>Regular updates</li>
+                            </ul>
+                            <a href="https://www.blender.org/download/" target="_blank" class="btn btn-primary">Download Blender</a>
+                        </div>
+
+                        <!-- PrusaSlicer -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.prusa3d.com/page/prusaslicer_424/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>PrusaSlicer</h3>
+                            <p>Advanced 3D printer slicer with excellent features for preparing models for printing.</p>
+                            <ul>
+                                <li>Advanced slicing</li>
+                                <li>Print optimization</li>
+                                <li>Multi-material support</li>
+                                <li>User-friendly interface</li>
+                            </ul>
+                            <a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank" class="btn btn-primary">Download PrusaSlicer</a>
+                        </div>
+
+                        <!-- FullControl -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://fullcontrol.xyz/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>FullControl</h3>
+                            <p>Design and control 3D printing paths directly for creative and experimental prints.</p>
+                            <ul>
+                                <li>Path-level control</li>
+                                <li>Experimental printing</li>
+                                <li>Creative freedom</li>
+                                <li>Educational tool</li>
+                            </ul>
+                            <a href="https://fullcontrol.xyz/#/models" target="_blank" class="btn btn-primary">Try FullControl</a>
+                        </div>
+
+                        <!-- 3D Wasp -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.app.3dwasp.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>3D Wasp App</h3>
+                            <p>Web-based tool for preparing and managing 3D prints with cloud functionality.</p>
+                            <ul>
+                                <li>Cloud-based preparation</li>
+                                <li>Model management</li>
+                                <li>Print optimization</li>
+                                <li>Web interface</li>
+                            </ul>
+                            <a href="https://www.app.3dwasp.com/#" target="_blank" class="btn btn-primary">Try 3D Wasp</a>
+                        </div>
+
+                        <!-- Blender Demo Files -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.blender.org/download/demo-files/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Blender Demo Files</h3>
+                            <p>Official Blender demo files showcasing capabilities - great for learning and inspiration.</p>
+                            <ul>
+                                <li>Example projects</li>
+                                <li>Learning resources</li>
+                                <li>Professional examples</li>
+                                <li>Technique demonstrations</li>
+                            </ul>
+                            <a href="https://www.blender.org/download/demo-files/" target="_blank" class="btn btn-primary">Browse Demo Files</a>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Textures & Materials -->
+                        <div class="resource-category" id="procedural">
+                            <h4>Textures & Materials for Rendering</h4>
+                    <p class="category-intro">
+                        Free high-quality textures and materials to enhance your 3D models for rendering and visualization.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Poly Haven Textures -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://polyhaven.com/textures"></div>
+                            <span class="tool-badge free">Free CC0</span>
+                            <h3>Poly Haven Textures</h3>
+                            <p>High-quality PBR textures with CC0 license. Completely free for any use with no restrictions.</p>
+                            <ul>
+                                <li>CC0 public domain</li>
+                                <li>PBR workflow ready</li>
+                                <li>High resolution</li>
+                                <li>HDRIs included</li>
+                            </ul>
+                            <a href="https://polyhaven.com/textures" target="_blank" class="btn btn-primary">Browse Textures</a>
+                        </div>
+
+                        <!-- Ambient CG -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://ambientcg.com/"></div>
+                            <span class="tool-badge free">Free CC0</span>
+                            <h3>Ambient CG</h3>
+                            <p>Public domain PBR materials library with thousands of textures. All materials are CC0 licensed.</p>
+                            <ul>
+                                <li>1000+ free materials</li>
+                                <li>PBR texture sets</li>
+                                <li>Multiple resolutions</li>
+                                <li>No attribution required</li>
+                            </ul>
+                            <a href="https://ambientcg.com/" target="_blank" class="btn btn-primary">Browse Materials</a>
+                        </div>
+
+                        <!-- 3D Textures -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://3dtextures.me/"></div>
+                            <span class="tool-badge free">Free CC0</span>
+                            <h3>3D Textures</h3>
+                            <p>Free seamless PBR textures for 3D rendering and game development. Easy download and use.</p>
+                            <ul>
+                                <li>Seamless textures</li>
+                                <li>PBR workflow</li>
+                                <li>Game-ready materials</li>
+                                <li>CC0 license</li>
+                            </ul>
+                            <a href="https://3dtextures.me/" target="_blank" class="btn btn-primary">Browse Textures</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                        <!-- Specialized Artistic Tools -->
+                        <div class="resource-category" id="specialized">
+                            <h4>Specialized Tools for Artistic Disciplines</h4>
+                    <p class="category-intro">
+                        Tools designed specifically for artistic disciplines, eliminating the need to adapt engineering-focused CAD software.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Potterware (Ceramics) -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://potterware.com"></div>
+                            <span class="tool-badge educational">$99/semester students</span>
+                            <h3>Potterware</h3>
+                            <p>Slider-based ceramic design eliminating 3D modeling knowledge. Direct ceramic 3D printer compatibility.</p>
+                            <ul>
+                                <li>Slider-based pottery design</li>
+                                <li>No 3D modeling required</li>
+                                <li>Ceramic 3D printer compatible</li>
+                                <li>Student pricing</li>
+                            </ul>
+                            <a href="https://potterware.com" target="_blank" class="btn btn-secondary">Visit Potterware</a>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- AI-Powered Generators -->
+                        <div class="resource-category" id="ai-tools">
+                            <h4>AI-Powered 3D Model Generators</h4>
+                    <p class="category-intro">
+                        Generate professional-quality 3D models from text prompts or images in minutes - no traditional modeling knowledge required.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Hunyuan3D 2.5 -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://hunyuan-3d.com"></div>
+                            <span class="tool-badge free">100% Free</span>
+                            <h3>Hunyuan3D 2.5</h3>
+                            <p>Premier free AI tool with unlimited daily use. Professional-quality results in 1-7 minutes with automatic UV mapping and PBR materials.</p>
+                            <ul>
+                                <li>Unlimited free daily credits</li>
+                                <li>Multiple artistic styles (cartoon, cyberpunk, stone, porcelain)</li>
+                                <li>Automatic UV mapping & PBR materials</li>
+                                <li>STL-ready output</li>
+                            </ul>
+                            <a href="https://hunyuan-3d.com" target="_blank" class="btn btn-primary">Try Hunyuan3D</a>
+                        </div>
+
+                        <!-- TRELLIS -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://microsoft.github.io/TRELLIS"></div>
+                            <span class="tool-badge free">Free Open Source</span>
+                            <h3>TRELLIS (Microsoft)</h3>
+                            <p>Cutting-edge structured 3D generation with 2 billion parameters. Completely free and open-source with controllable generation.</p>
+                            <ul>
+                                <li>2 billion parameters</li>
+                                <li>State-of-the-art quality</li>
+                                <li>Local editing capabilities</li>
+                                <li>Multiple output formats</li>
+                            </ul>
+                            <a href="https://microsoft.github.io/TRELLIS" target="_blank" class="btn btn-primary">Try TRELLIS</a>
+                        </div>
+
+                        <!-- Luma AI Genie -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://lumalabs.ai/genie"></div>
+                            <span class="tool-badge free">Free Tier</span>
+                            <h3>Luma AI Genie</h3>
+                            <p>Fast AI 3D generation with high-quality results. Create models from text descriptions quickly.</p>
+                            <ul>
+                                <li>Text-to-3D generation</li>
+                                <li>Fast processing</li>
+                                <li>High-quality output</li>
+                                <li>Free tier available</li>
+                            </ul>
+                            <a href="https://lumalabs.ai/genie?view=create" target="_blank" class="btn btn-primary">Try Luma Genie</a>
+                        </div>
+
+                        <!-- Meshy AI -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://meshy.ai"></div>
+                            <span class="tool-badge premium">Free Tier + $20/mo</span>
+                            <h3>Meshy AI</h3>
+                            <p>Serves over 3 million users with intuitive text-to-3D and image-to-3D conversion. 2-minute generation times.</p>
+                            <ul>
+                                <li>3M+ users worldwide</li>
+                                <li>Text & image to 3D</li>
+                                <li>2-minute generation</li>
+                                <li>Free tier available</li>
+                            </ul>
+                            <a href="https://meshy.ai" target="_blank" class="btn btn-secondary">Try Meshy AI</a>
+                        </div>
+
+                        <!-- Tripo v2.5 -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://tripo3d.ai"></div>
+                            <span class="tool-badge free">Free Plan Available</span>
+                            <h3>Tripo v2.5</h3>
+                            <p>Beginner-friendly AI with ultra-fast generation and intuitive interface.</p>
+                            <ul>
+                                <li>Ultra-fast generation</li>
+                                <li>Beginner-friendly interface</li>
+                                <li>Free plan available</li>
+                                <li>High-quality output</li>
+                            </ul>
+                            <a href="https://tripo3d.ai" target="_blank" class="btn btn-primary">Try Tripo</a>
+                        </div>
+
+                        <!-- Spline AI -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://spline.design/ai-generate"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Spline AI</h3>
+                            <p>Interactive 3D design platform with AI generation capabilities. Real-time collaboration.</p>
+                            <ul>
+                                <li>AI-powered generation</li>
+                                <li>Interactive 3D design</li>
+                                <li>Real-time collaboration</li>
+                                <li>Web-based platform</li>
+                            </ul>
+                            <a href="https://spline.design/ai-generate" target="_blank" class="btn btn-primary">Try Spline AI</a>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Video Tutorials -->
+                        <div class="resource-category" id="tutorials">
+                            <h4>Video Tutorials</h4>
+                    <p class="category-intro">
+                        Workshop video guides for 3D printing at the Maker Station.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Tutorial 1 -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.youtube.com/watch?v=AXhUighWpUw"></div>
+                            <span class="tool-badge free">Video Tutorial</span>
+                            <h3>Workshop Video 1</h3>
+                            <a href="https://www.youtube.com/watch?v=AXhUighWpUw&ab_channel=JoseLuis" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+
+                        <!-- Tutorial 2 -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.youtube.com/watch?v=l59lwwpP1-U"></div>
+                            <span class="tool-badge free">Video Tutorial</span>
+                            <h3>Workshop Video 2</h3>
+                            <a href="https://www.youtube.com/watch?v=l59lwwpP1-U&ab_channel=JoseLuis" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+
+                        <!-- Tutorial 3 -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.youtube.com/watch?v=nVqNfx3UowE"></div>
+                            <span class="tool-badge free">Video Tutorial</span>
+                            <h3>Workshop Video 3</h3>
+                            <a href="https://www.youtube.com/watch?v=nVqNfx3UowE&ab_channel=JoseLuis" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+
+                        <!-- Tutorial 4 -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.youtube.com/watch?v=PzpDSQ3PSS8"></div>
+                            <span class="tool-badge free">Video Tutorial</span>
+                            <h3>Workshop Video 4</h3>
+                            <a href="https://www.youtube.com/watch?v=PzpDSQ3PSS8&ab_channel=JoseLuis" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+
+                        <!-- Tutorial 5 -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.youtube.com/watch?v=uZYmEXP6A-o"></div>
+                            <span class="tool-badge free">Video Tutorial</span>
+                            <h3>Advanced Techniques (3dzeke)</h3>
+                            <a href="https://www.youtube.com/watch?v=uZYmEXP6A-o&t=481s&ab_channel=3dzeke" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('faq')">
+                        <h2>Frequently Asked Questions</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="faq">
+                        <div class="faq-item">
+                            <h4>What file formats do I need for 3D printing?</h4>
+                            <p>STL is the most common format for 3D printing. OBJ, 3MF, and PLY files are also supported by most printers. You'll also need to slice the model using software like PrusaSlicer.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What materials can be 3D printed?</h4>
+                            <p>PLA (easiest), ABS (strong), PETG (chemical resistant), TPU (flexible), and specialty materials like wood-fill, metal-fill, and carbon fiber composites.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How long does 3D printing take?</h4>
+                            <p>Print times vary greatly based on size, complexity, and quality settings. Small objects may take 30 minutes, while large detailed prints can take 12+ hours.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Do I need to know 3D modeling?</h4>
+                            <p>Not necessarily. You can download ready-made models from repositories like Thingiverse, or use AI generators like Hunyuan3D to create models from text descriptions.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What's the difference between FDM and resin printing?</h4>
+                            <p>FDM uses melted plastic filament and is better for larger, functional parts. Resin printing uses liquid polymer and UV light, producing highly detailed small objects but requiring more safety precautions.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Maker Station</h3>
+                    <p>Equipment & Tools Hub<br>
+                    Creative Technology Resources</p>
+                </div>
+                <div class="footer__section">
+                    <h3>Equipment</h3>
+                    <a href="laser-cutting.html">Laser Cutting</a>
+                    <a href="3d-printing.html">3D Printing</a>
+                    <a href="silhouette.html">Silhouette Machines</a>
+                    <a href="clay-printer.html">Clay Printer</a>
+                    <a href="3d-scanner.html">3D Scanner</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Top Model Repositories</h3>
+                    <a href="https://www.thingiverse.com/" target="_blank">Thingiverse</a>
+                    <a href="https://www.printables.com/" target="_blank">Printables</a>
+                    <a href="https://nasa3d.arc.nasa.gov/" target="_blank">NASA 3D Models</a>
+                    <a href="https://www.myminifactory.com/scantheworld/" target="_blank">Scan the World</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Quick Tools</h3>
+                    <a href="https://imagetostl.com/" target="_blank">Image to STL</a>
+                    <a href="https://hunyuan-3d.com" target="_blank">Hunyuan3D AI</a>
+                    <a href="https://www.blender.org/" target="_blank">Blender</a>
+                    <a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank">PrusaSlicer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            const section = content.closest('.dropdown-section');
+
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.closest('.dropdown-section').classList.remove('active');
+                }
+            });
+
+            // Toggle current dropdown
+            content.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+
+        // Open first dropdown by default
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleDropdown('introduction');
+        });
+    </script>
+</body>
+</html>

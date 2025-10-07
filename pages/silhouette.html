@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Silhouette machine resources for Maker Station">
+    <title>Silhouette Machines - Maker Station</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <span>Maker Station</span>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav nav-menu" aria-label="Main navigation">
+                <a href="../index.html" class="nav__link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav__link dropdown-toggle">Equipment & Tools</a>
+                    <div class="dropdown-menu">
+                        <a href="laser-cutting.html" class="dropdown-item">Laser Cutting</a>
+                        <a href="3d-printing.html" class="dropdown-item">3D Printing</a>
+                        <a href="silhouette.html" class="dropdown-item dropdown-item--active">Silhouette Cutting</a>
+                        <a href="rotosonic-nucleus.html" class="dropdown-item">Rotosonic Nucleus</a>
+                        <a href="clay-printer.html" class="dropdown-item">Clay Printer</a>
+                        <a href="3d-scanner.html" class="dropdown-item">3D Scanner</a>
+                    </div>
+                </div>
+                <a href="booking.html" class="nav__link">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Silhouette Cutting</h1>
+                <p>Precision vinyl and paper cutting - Training & Operating Guide</p>
+            </div>
+        </section>
+
+        <!-- Dropdown Sections -->
+        <section class="dropdown-sections">
+            <div class="container">
+
+                <!-- Introduction Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('introduction')">
+                        <h2>Introduction</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="introduction">
+                        <h3>What are Silhouette Machines?</h3>
+                        <p>Silhouette machines are precision cutting devices that use a small blade to cut through various materials including vinyl, paper, cardstock, fabric, and specialty materials. These machines are controlled by software and can create intricate designs with high accuracy.</p>
+
+                        <h4>How they Work:</h4>
+                        <p>The machine follows digital cutting paths created in design software. A small blade moves across the material surface, cutting through it while leaving the backing material intact. The cutting force and blade depth can be adjusted for different materials.</p>
+
+                        <h4>Applications:</h4>
+                        <ul>
+                            <li>Vinyl decals and stickers</li>
+                            <li>Heat transfer vinyl for textiles</li>
+                            <li>Paper crafting and cardmaking</li>
+                            <li>Fabric cutting for fashion projects</li>
+                            <li>Stencils and templates</li>
+                            <li>Packaging prototypes</li>
+                        </ul>
+
+                        <div class="info-box highlight">
+                            <h4>Material Compatibility</h4>
+                            <p>Works with vinyl, paper, cardstock, fabric, leather, magnetic sheets, and many specialty materials up to certain thicknesses.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training Manual Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('training')">
+                        <h2>Training Manual</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="training">
+                        <div class="info-box highlight">
+                            <h4>⚠️ Training Required</h4>
+                            <p>Silhouette machines require proper training before use. Contact the Maker Station team to arrange hands-on training covering software setup, material loading, and cutting techniques.</p>
+                        </div>
+
+                        <h3>Basic Operating Process</h3>
+
+                        <h4>Step 1: Design Preparation</h4>
+                        <p>Create or import your design in Silhouette Studio software. Set up cut lines, adjust sizing, and arrange designs for optimal material usage.</p>
+
+                        <h4>Step 2: Material Setup</h4>
+                        <p>Select appropriate cutting mat and material settings. Load material onto cutting mat ensuring no air bubbles or wrinkles.</p>
+
+                        <h4>Step 3: Machine Preparation</h4>
+                        <p>Install correct blade for your material, adjust cutting force settings, and load cutting mat into machine.</p>
+
+                        <h4>Step 4: Cutting Process</h4>
+                        <p>Send design to machine, monitor cutting process, and carefully remove cut pieces using weeding tools.</p>
+
+                        <div class="info-box warning">
+                            <h4>Important Safety Notes</h4>
+                            <ul>
+                                <li>Always use appropriate blade for material type</li>
+                                <li>Keep fingers clear of cutting blade</li>
+                                <li>Store blades safely when not in use</li>
+                                <li>Clean cutting mats regularly for best adhesion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('resources')">
+                        <h2>Resources</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="resources">
+                        <div class="resource-grid">
+                            <div class="resource-card">
+                                <div class="tool-badge">Software</div>
+                                <h3>Silhouette Studio</h3>
+                                <p>Official design software for Silhouette machines with comprehensive cutting tools and design features.</p>
+                                <a href="https://www.silhouetteamerica.com/software" class="btn btn-primary" target="_blank">Download Software</a>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="tool-badge">Community</div>
+                                <h3>Silhouette Design Store</h3>
+                                <p>Official design library with thousands of ready-to-cut designs for various projects and applications.</p>
+                                <a href="https://www.silhouettedesignstore.com/" class="btn btn-primary" target="_blank">Browse Designs</a>
+                            </div>
+                        </div>
+
+                        <h4>File Formats</h4>
+                        <p><strong>Studio Files:</strong> Native Silhouette format | <strong>SVG:</strong> Vector graphics | <strong>DXF:</strong> CAD format | <strong>PNG/JPG:</strong> For print & cut</p>
+
+                        <h4>Support Resources</h4>
+                        <p><strong>Silhouette America:</strong> <a href="https://www.silhouetteamerica.com/" target="_blank">www.silhouetteamerica.com</a><br>
+                        <strong>Video Tutorials:</strong> <a href="https://www.silhouetteamerica.com/video-tutorials" target="_blank">Official Tutorial Library</a></p>
+                    </div>
+                </div>
+
+                <!-- FAQ Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('faq')">
+                        <h2>Frequently Asked Questions</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="faq">
+                        <div class="faq-item">
+                            <h4>What materials can be cut?</h4>
+                            <p>Vinyl, paper, cardstock, fabric, leather, magnetic sheets, and many specialty materials. Each material requires appropriate blade and force settings.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Do I need special software?</h4>
+                            <p>Yes, Silhouette Studio is required for design and cutting. The basic version is free, with advanced features available in paid versions.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How do I create cutting files?</h4>
+                            <p>Design in Silhouette Studio, import SVG files, or purchase ready-made designs from the Silhouette Design Store. Ensure all cut lines are properly set.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What's the difference between cutting and printing?</h4>
+                            <p>Cutting creates shapes by cutting through material. Print & Cut first prints a design, then cuts around it using registration marks for precise alignment.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How do I maintain the cutting mats?</h4>
+                            <p>Clean mats with scraper tool and water. Allow to dry completely before use. Replace mats when adhesive becomes too weak to hold materials securely.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Maker Station</h3>
+                    <p>Equipment & Tools Hub<br>
+                    Creative Technology Resources</p>
+                </div>
+                <div class="footer__section">
+                    <h3>Equipment</h3>
+                    <a href="laser-cutting.html">Laser Cutting</a>
+                    <a href="3d-printing.html">3D Printing</a>
+                    <a href="silhouette.html">Silhouette Machines</a>
+                    <a href="clay-printer.html">Clay Printer</a>
+                    <a href="3d-scanner.html">3D Scanner</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Available Resources</h3>
+                    <a href="laser-cutting.html">Laser Cutting Tools</a>
+                    <a href="3d-printing.html">3D Printing Software</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Contact</h3>
+                    <p>For equipment access and training,<br>
+                    please contact the Maker Station team.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            const section = content.closest('.dropdown-section');
+
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.closest('.dropdown-section').classList.remove('active');
+                }
+            });
+
+            // Toggle current dropdown
+            content.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+
+        // Open first dropdown by default
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleDropdown('introduction');
+        });
+    </script>
+</body>
+</html>

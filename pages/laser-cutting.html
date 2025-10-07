@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive laser cutting resources for art students - free tools, tutorials, and design software">
+    <title>Laser Cutting Resources - Maker Station</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <span>Maker Station</span>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav nav-menu" aria-label="Main navigation">
+                <a href="../index.html" class="nav__link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav__link dropdown-toggle">Equipment & Tools</a>
+                    <div class="dropdown-menu">
+                        <a href="laser-cutting.html" class="dropdown-item dropdown-item--active">Laser Cutting</a>
+                        <a href="3d-printing.html" class="dropdown-item">3D Printing</a>
+                        <a href="silhouette.html" class="dropdown-item">Silhouette Cutting</a>
+                        <a href="rotosonic-nucleus.html" class="dropdown-item">Rotosonic Nucleus</a>
+                        <a href="clay-printer.html" class="dropdown-item">Clay Printer</a>
+                        <a href="3d-scanner.html" class="dropdown-item">3D Scanner</a>
+                    </div>
+                </div>
+                <a href="booking.html" class="nav__link">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Laser Cutting</h1>
+                <p>Precision cutting and engraving - Training & Resource Guide</p>
+            </div>
+        </section>
+
+        <!-- Dropdown Sections -->
+        <section class="dropdown-sections">
+            <div class="container">
+
+                <!-- Introduction Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('introduction')">
+                        <h2>Introduction</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="introduction">
+                        <h3>What is Laser Cutting?</h3>
+                        <p>Laser cutting uses a focused laser beam to cut and engrave materials with high precision. The computer-controlled system follows digital designs to create accurate cuts through various materials including wood, acrylic, paper, fabric, and thin metals.</p>
+
+                        <h4>How it Works:</h4>
+                        <p>A laser beam is directed through optics and focused through a lens onto the material surface. The laser energy vaporizes or melts the material along the cutting path, while an assist gas blows away the molten material to create a clean cut.</p>
+
+                        <h4>Applications:</h4>
+                        <ul>
+                            <li>Prototyping and product development</li>
+                            <li>Architectural models and scale mockups</li>
+                            <li>Jewelry and fashion accessories</li>
+                            <li>Signage and decorative elements</li>
+                            <li>Packaging and templates</li>
+                            <li>Educational projects and experiments</li>
+                        </ul>
+
+                        <div class="info-box highlight">
+                            <h4>Material Compatibility</h4>
+                            <p>Best results with wood, acrylic, paper, cardboard, fabric, and leather. Some materials like PVC and certain plastics should not be laser cut due to toxic fumes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('resources')">
+                        <h2>Design Resources</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="resources">
+
+                        <!-- Nesting & Optimization Tools -->
+                        <div class="resource-category" id="nesting-tools">
+                            <h4>Nesting & Optimization Tools</h4>
+                            <p class="category-intro">
+                                Essential tools to optimize material usage by efficiently arranging your designs on sheets - save material and reduce waste.
+                            </p>
+
+                    <div class="resource-grid">
+                        <!-- SVGnest -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://svgnest.com/test/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>SVGnest</h3>
+                            <p>Browser-based nesting tool that automatically arranges your designs to minimize waste. Upload SVG files and optimize material usage instantly.</p>
+                            <ul>
+                                <li>Automatic layout optimization</li>
+                                <li>Browser-based, no installation</li>
+                                <li>SVG file support</li>
+                                <li>Real-time nesting preview</li>
+                            </ul>
+                            <a href="https://svgnest.com/test/" target="_blank" class="btn btn-primary">Try SVGnest</a>
+                        </div>
+
+                        <!-- Deepnest -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.deepnest.net/en/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Deepnest</h3>
+                            <p>Advanced open-source nesting software with powerful algorithms to pack shapes efficiently. Desktop application for serious nesting needs.</p>
+                            <ul>
+                                <li>Advanced nesting algorithms</li>
+                                <li>Open-source software</li>
+                                <li>Multiple file format support</li>
+                                <li>Material cost calculation</li>
+                            </ul>
+                            <a href="https://www.deepnest.net/en/" target="_blank" class="btn btn-primary">Download Deepnest</a>
+                        </div>
+
+                        <!-- LightBurn Nesting -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://lightburnsoftware.com"></div>
+                            <span class="tool-badge premium">$60</span>
+                            <h3>LightBurn Nesting</h3>
+                            <p>Professional nesting built into LightBurn software. Automatic and manual nesting options with advanced optimization.</p>
+                            <ul>
+                                <li>Integrated with LightBurn</li>
+                                <li>Automatic & manual modes</li>
+                                <li>Advanced optimization</li>
+                                <li>Professional results</li>
+                            </ul>
+                            <a href="https://docs.lightburnsoftware.com/1.7/Reference/NestSelected/" target="_blank" class="btn btn-secondary">View Documentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Essential Web-Based Generators -->
+                        <div class="resource-category" id="web-generators">
+                            <h4>Essential Web-Based Generators</h4>
+                    <p class="category-intro">
+                        Browser-based tools requiring no installation - perfect for immediate student use and creative exploration.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Cuttle -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://cuttle.xyz"></div>
+                            <span class="tool-badge free">Free & Premium</span>
+                            <h3>Cuttle</h3>
+                            <p>Premier browser-based parametric design tool built specifically for laser cutting. Create jewelry, ornaments, and personalized items through drag-and-drop interfaces.</p>
+                            <ul>
+                                <li>Real-time parameter adjustments</li>
+                                <li>Drag-and-drop interface</li>
+                                <li>Free access with premium features</li>
+                                <li>Perfect for beginners</li>
+                            </ul>
+                            <a href="https://cuttle.xyz" target="_blank" class="btn btn-primary">Visit Cuttle</a>
+                        </div>
+
+                        <!-- Pattern Monster -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://pattern.monster"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Pattern Monster</h3>
+                            <p>Instant access to over 248 customizable patterns with adjustable scale, rotation, and colors. Commercial-use license included.</p>
+                            <ul>
+                                <li>248+ customizable patterns</li>
+                                <li>Seamless SVG export</li>
+                                <li>Commercial-use license</li>
+                                <li>No design experience required</li>
+                            </ul>
+                            <a href="https://pattern.monster" target="_blank" class="btn btn-primary">Visit Pattern Monster</a>
+                        </div>
+
+                        <!-- Boxes.py -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.festi.info/boxes.py/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Boxes.py (Festi's Boxes)</h3>
+                            <p>Comprehensive platform offering 80+ different mechanical components, boxes with finger joints, gears, and structural elements.</p>
+                            <ul>
+                                <li>80+ component types</li>
+                                <li>Automatic kerf compensation</li>
+                                <li>Parametric box generation</li>
+                                <li>Engineering & artistic applications</li>
+                            </ul>
+                            <a href="https://www.festi.info/boxes.py/index.html" target="_blank" class="btn btn-primary">Visit Boxes.py</a>
+                        </div>
+
+                        <!-- MakerCase -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.makercase.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>MakerCase</h3>
+                            <p>Simple and intuitive box generator perfect for beginners. Create custom boxes with various joint types in minutes.</p>
+                            <ul>
+                                <li>Beginner-friendly interface</li>
+                                <li>Multiple joint options</li>
+                                <li>Instant SVG download</li>
+                                <li>Quick prototyping</li>
+                            </ul>
+                            <a href="https://www.makercase.com/#/basicbox" target="_blank" class="btn btn-primary">Try MakerCase</a>
+                        </div>
+
+                        <!-- Make a Box -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://makeabox.io"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Make a Box</h3>
+                            <p>Simple parametric box generator with finger joints - perfect for quick container designs.</p>
+                            <ul>
+                                <li>Quick box generation</li>
+                                <li>Finger joint options</li>
+                                <li>Beginner-friendly</li>
+                                <li>Instant SVG download</li>
+                            </ul>
+                            <a href="https://makeabox.io" target="_blank" class="btn btn-primary">Visit Make a Box</a>
+                        </div>
+
+                        <!-- FFFUEL -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://fffuel.co"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>FFFUEL</h3>
+                            <p>Multiple generators for mesh gradients, isometric patterns, and oscillation curves. Perfect for unique backgrounds and artistic elements.</p>
+                            <ul>
+                                <li>Mesh gradient generator</li>
+                                <li>Isometric pattern tools</li>
+                                <li>Oscillation curves</li>
+                                <li>Artistic backgrounds</li>
+                            </ul>
+                            <a href="https://fffuel.co" target="_blank" class="btn btn-primary">Visit FFFUEL</a>
+                        </div>
+
+                        <!-- PatternPad -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://patternpad.com"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>PatternPad</h3>
+                            <p>Create unlimited unique pattern designs. Beautiful online pattern editor for creating seamless patterns.</p>
+                            <ul>
+                                <li>Seamless pattern creation</li>
+                                <li>Visual editor interface</li>
+                                <li>SVG export</li>
+                                <li>Unlimited designs</li>
+                            </ul>
+                            <a href="https://patternpad.com/editor.html" target="_blank" class="btn btn-primary">Try PatternPad</a>
+                        </div>
+
+                        <!-- Voronoi Editor -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://voronoi-editor.web.app/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Voronoi Editor</h3>
+                            <p>Create beautiful Voronoi diagrams and patterns. Perfect for organic, cell-like decorative designs.</p>
+                            <ul>
+                                <li>Voronoi diagram generation</li>
+                                <li>Interactive editing</li>
+                                <li>Organic patterns</li>
+                                <li>SVG export</li>
+                            </ul>
+                            <a href="https://voronoi-editor.web.app/" target="_blank" class="btn btn-primary">Try Voronoi Editor</a>
+                        </div>
+
+                        <!-- Template Maker -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.templatemaker.nl"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Template Maker</h3>
+                            <p>Creative Commons collection of paper boxes and fold patterns with assembly guides. Perfect for packaging design.</p>
+                            <ul>
+                                <li>Paper box templates</li>
+                                <li>Fold pattern library</li>
+                                <li>Assembly instructions</li>
+                                <li>Creative Commons license</li>
+                            </ul>
+                            <a href="https://www.templatemaker.nl/en/" target="_blank" class="btn btn-primary">Visit Template Maker</a>
+                        </div>
+
+                        <!-- DrawingBots.net Tools -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://drawingbots.net"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>DrawingBots.net Tools</h3>
+                            <p>Collection of creative algorithms and tools for generating plotter-friendly and laser-cut designs.</p>
+                            <ul>
+                                <li>Generative art tools</li>
+                                <li>Plotter-friendly output</li>
+                                <li>Multiple algorithms</li>
+                                <li>Creative exploration</li>
+                            </ul>
+                            <a href="https://drawingbots.net/knowledge/tools" target="_blank" class="btn btn-primary">Explore Tools</a>
+                        </div>
+
+                        <!-- Jerome Leary's Gears -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.jeromeleary.com/gears/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Jerome Leary's Gears</h3>
+                            <p>Precise gear generator for functional mechanical projects and kinetic art installations.</p>
+                            <ul>
+                                <li>Precision gear generation</li>
+                                <li>Multiple gear types</li>
+                                <li>Mechanical accuracy</li>
+                                <li>SVG export</li>
+                            </ul>
+                            <a href="https://www.jeromeleary.com/gears/" target="_blank" class="btn btn-primary">Generate Gears</a>
+                        </div>
+
+                        <!-- Maze Generator -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.mazegenerator.net/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Maze Generator</h3>
+                            <p>Generate custom mazes in various shapes and sizes. Perfect for puzzles and decorative projects.</p>
+                            <ul>
+                                <li>Multiple maze algorithms</li>
+                                <li>Custom dimensions</li>
+                                <li>Various maze styles</li>
+                                <li>Printable output</li>
+                            </ul>
+                            <a href="https://www.mazegenerator.net/" target="_blank" class="btn btn-primary">Generate Mazes</a>
+                        </div>
+
+                        <!-- LaserCutMazes -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://adashrod.github.io/LaserCutMazes/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>LaserCutMazes</h3>
+                            <p>Specialized maze generator optimized for laser cutting with customizable walls and paths.</p>
+                            <ul>
+                                <li>Laser-cut optimized</li>
+                                <li>Customizable wall thickness</li>
+                                <li>3D maze options</li>
+                                <li>SVG export</li>
+                            </ul>
+                            <a href="https://adashrod.github.io/LaserCutMazes/welcome" target="_blank" class="btn btn-primary">Create Laser Mazes</a>
+                        </div>
+
+                        <!-- Jigsaw Puzzle Generator -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="about:blank"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Jigsaw Puzzle Generator</h3>
+                            <p>Generate custom jigsaw puzzle patterns for laser cutting your own puzzles.</p>
+                            <ul>
+                                <li>Custom puzzle patterns</li>
+                                <li>Variable piece counts</li>
+                                <li>Laser-cut ready</li>
+                                <li>SVG output</li>
+                            </ul>
+                            <a href="https://gists.rawgit.com/Draradech/35d36347312ca6d0887aa7d55f366e30/raw/b04cf9cd63a59571910cb226226ce2b3ed46af46/jigsaw.html" target="_blank" class="btn btn-primary">Generate Puzzles</a>
+                        </div>
+
+                        <!-- Blocklayer -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.blocklayer.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Blocklayer Templates</h3>
+                            <p>Extensive collection of practical templates including tube mitre patterns, protractors, and construction aids.</p>
+                            <ul>
+                                <li>Tube mitre patterns</li>
+                                <li>Protractor templates</li>
+                                <li>Construction aids</li>
+                                <li>Engineering tools</li>
+                            </ul>
+                            <a href="https://www.blocklayer.com/protractor-printeng" target="_blank" class="btn btn-primary">Browse Templates</a>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Specialized Tools -->
+                        <div class="resource-category" id="specialized">
+                            <h4>Specialized Tools for Artistic Disciplines</h4>
+                    <p class="category-intro">
+                        Tools optimized for specific creative applications - typography, mechanical art, and specialty design.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Stencilfy -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://stencilfy.onrender.com/"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Stencilfy</h3>
+                            <p>Converts any font to laser-cutter-friendly stencil format. Perfect for signage and decorative text.</p>
+                            <ul>
+                                <li>Font-to-stencil conversion</li>
+                                <li>Laser-ready output</li>
+                                <li>Any font supported</li>
+                                <li>Instant generation</li>
+                            </ul>
+                            <a href="https://stencilfy.onrender.com/" target="_blank" class="btn btn-primary">Visit Stencilfy</a>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Advanced Software -->
+                        <div class="resource-category" id="advanced">
+                            <h4>Advanced Software Progression</h4>
+                    <p class="category-intro">
+                        For students ready to advance beyond web-based tools - comprehensive open-source and professional alternatives.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- Inkscape -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://inkscape.org"></div>
+                            <span class="tool-badge free">Free Open Source</span>
+                            <h3>Inkscape</h3>
+                            <p>Industry-standard vector graphics editor with laser cutting extensions. Complete ecosystem for creative work.</p>
+                            <ul>
+                                <li>Professional vector editing</li>
+                                <li>Laser cutting extensions</li>
+                                <li>Cross-platform support</li>
+                                <li>Extensive tutorials</li>
+                            </ul>
+                            <a href="https://inkscape.org" target="_blank" class="btn btn-primary">Download Inkscape</a>
+                        </div>
+
+                        <!-- LightBurn -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://lightburnsoftware.com"></div>
+                            <span class="tool-badge premium">$60</span>
+                            <h3>LightBurn</h3>
+                            <p>Professional laser cutting software with advanced features for design, layout, and machine control.</p>
+                            <ul>
+                                <li>Professional laser control</li>
+                                <li>Advanced design tools</li>
+                                <li>Material library</li>
+                                <li>Job optimization</li>
+                            </ul>
+                            <a href="https://lightburnsoftware.com/" target="_blank" class="btn btn-secondary">Visit LightBurn</a>
+                        </div>
+
+                        <!-- LibreCAD -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://librecad.org"></div>
+                            <span class="tool-badge free">Free Open Source</span>
+                            <h3>LibreCAD</h3>
+                            <p>Precision drafting for technical laser cutting projects. Free open-source CAD software.</p>
+                            <ul>
+                                <li>Precision 2D drafting</li>
+                                <li>Technical drawing tools</li>
+                                <li>Layer management</li>
+                                <li>Professional output</li>
+                            </ul>
+                            <a href="https://librecad.org" target="_blank" class="btn btn-primary">Download LibreCAD</a>
+                        </div>
+
+                        <!-- OpenSCAD -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://openscad.org"></div>
+                            <span class="tool-badge free">Free Open Source</span>
+                            <h3>OpenSCAD</h3>
+                            <p>Programming-based parametric design for students interested in code-driven creative workflows.</p>
+                            <ul>
+                                <li>Code-based parametric design</li>
+                                <li>Precise mathematical control</li>
+                                <li>Systematic design thinking</li>
+                                <li>Educational value</li>
+                            </ul>
+                            <a href="https://openscad.org" target="_blank" class="btn btn-primary">Download OpenSCAD</a>
+                        </div>
+
+                        <!-- FreeCAD -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.freecad.org"></div>
+                            <span class="tool-badge free">Free Open Source</span>
+                            <h3>FreeCAD v1.0</h3>
+                            <p>Professional-grade parametric modeling with Python scripting and comprehensive 2D/3D integration.</p>
+                            <ul>
+                                <li>Professional parametric modeling</li>
+                                <li>Python scripting capabilities</li>
+                                <li>2D/3D integration</li>
+                                <li>Workbench specialization</li>
+                            </ul>
+                            <a href="https://www.freecad.org" target="_blank" class="btn btn-primary">Download FreeCAD</a>
+                        </div>
+
+                        <!-- Blender with Addons -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://www.blender.org"></div>
+                            <span class="tool-badge free">Free Open Source</span>
+                            <h3>Blender (Laser Cutting Addons)</h3>
+                            <p>Most advanced capabilities with Flatterer, Laser Slicer, and ShapeMuse addons for 3D-to-2D workflows.</p>
+                            <ul>
+                                <li>Flatterer (3D mesh to SVG)</li>
+                                <li>Laser Slicer (3D slicing)</li>
+                                <li>ShapeMuse (procedural patterns)</li>
+                                <li>Complex 3D-to-2D workflows</li>
+                            </ul>
+                            <a href="https://www.blender.org" target="_blank" class="btn btn-primary">Download Blender</a>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Free Resources -->
+                        <div class="resource-category" id="free-resources">
+                            <h4>Free Template Libraries & Community Resources</h4>
+                    <p class="category-intro">
+                        Extensive learning-by-example opportunities and practical project starting points.
+                    </p>
+
+                    <div class="resource-grid">
+                        <!-- 3axis.co -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://3axis.co"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>3axis.co</h3>
+                            <p>Collection of 17,353+ free laser cut templates for learning and inspiration.</p>
+                            <ul>
+                                <li>17,353+ free templates</li>
+                                <li>Learning by example</li>
+                                <li>Project inspiration</li>
+                                <li>Immediate download</li>
+                            </ul>
+                            <a href="https://3axis.co" target="_blank" class="btn btn-primary">Browse Templates</a>
+                        </div>
+
+                        <!-- Vecty.co -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://vecty.co"></div>
+                            <span class="tool-badge free">Free</span>
+                            <h3>Vecty.co</h3>
+                            <p>Multi-format downloads with extensive vector library for laser cutting projects.</p>
+                            <ul>
+                                <li>Multi-format support</li>
+                                <li>Extensive vector library</li>
+                                <li>Project templates</li>
+                                <li>Free downloads</li>
+                            </ul>
+                            <a href="https://vecty.co" target="_blank" class="btn btn-primary">Browse Library</a>
+                        </div>
+
+                        <!-- Cults3D -->
+                        <div class="resource-card">
+                            <div class="tool-preview" data-url="https://cults3d.com/en"></div>
+                            <span class="tool-badge premium">Free & Premium</span>
+                            <h3>Cults3D (Laser Files)</h3>
+                            <p>Independent marketplace with laser cutting files (DXF, SVG). Free and paid designs from community creators.</p>
+                            <ul>
+                                <li>DXF & SVG files</li>
+                                <li>Free & paid options</li>
+                                <li>Designer-focused platform</li>
+                                <li>Community marketplace</li>
+                            </ul>
+                            <a href="https://cults3d.com/en" target="_blank" class="btn btn-secondary">Browse Cults3D</a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('faq')">
+                        <h2>Frequently Asked Questions</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="faq">
+                        <div class="faq-item">
+                            <h4>What materials can be laser cut?</h4>
+                            <p>Wood, acrylic, paper, cardboard, fabric, leather, and some thin metals work well. Avoid PVC and materials that produce toxic fumes when heated.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What file formats are needed?</h4>
+                            <p>Vector formats like SVG, DXF, or AI work best for cutting. Raster images (PNG, JPG) can be used for engraving operations.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How thick can materials be?</h4>
+                            <p>Thickness depends on material and laser power. Typically up to 6mm for acrylic, 12mm for wood, though this varies by specific equipment.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Do I need special software?</h4>
+                            <p>Many web-based tools are available for free. Advanced users may prefer desktop software like Inkscape (free) or LightBurn (paid).</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How do I prepare files for cutting?</h4>
+                            <p>Ensure proper line weights, closed paths for cutting, and consider kerf (material removed by laser beam) in your design tolerances.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Maker Station</h3>
+                    <p>Equipment & Tools Hub<br>
+                    Creative Technology Resources</p>
+                </div>
+                <div class="footer__section">
+                    <h3>Equipment</h3>
+                    <a href="laser-cutting.html">Laser Cutting</a>
+                    <a href="3d-printing.html">3D Printing</a>
+                    <a href="silhouette.html">Silhouette Machines</a>
+                    <a href="clay-printer.html">Clay Printer</a>
+                    <a href="3d-scanner.html">3D Scanner</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Essential Tools</h3>
+                    <a href="https://svgnest.com/test/" target="_blank">SVGnest (Nesting)</a>
+                    <a href="https://cuttle.xyz" target="_blank">Cuttle</a>
+                    <a href="https://pattern.monster" target="_blank">Pattern Monster</a>
+                    <a href="https://www.festi.info/boxes.py/" target="_blank">Boxes.py</a>
+                    <a href="https://inkscape.org" target="_blank">Inkscape</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Quick Links</h3>
+                    <a href="#nesting-tools">Nesting Tools</a>
+                    <a href="#web-generators">Generators</a>
+                    <a href="#tutorials">Tutorials</a>
+                    <a href="#advanced">Software</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            const section = content.closest('.dropdown-section');
+
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.closest('.dropdown-section').classList.remove('active');
+                }
+            });
+
+            // Toggle current dropdown
+            content.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+
+        // Open first dropdown by default
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleDropdown('introduction');
+        });
+    </script>
+</body>
+</html>

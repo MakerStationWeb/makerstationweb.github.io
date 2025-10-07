@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maker Station booking system for equipment access and workshop sessions.">
+    <meta name="keywords" content="booking, maker station, equipment access, workshop sessions">
+    <meta name="author" content="Maker Station">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Maker Station - Booking & Access">
+    <meta property="og:description" content="Book equipment access and workshop sessions at the Maker Station digital fabrication hub.">
+    <meta property="og:type" content="website">
+
+    <title>Booking & Access - Maker Station</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .booking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .booking-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        .contact-card {
+            background: var(--neutral-light);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .booking-steps {
+            background: var(--neutral-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .booking-steps h3 {
+            margin-top: 0;
+            color: var(--text-primary);
+        }
+
+        .booking-steps ol {
+            line-height: 1.8;
+            padding-left: 1.5rem;
+        }
+
+        .booking-steps li {
+            margin-bottom: 0.75rem;
+        }
+
+        .equipment-access-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .access-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--shadow-light);
+            text-align: center;
+        }
+
+        .access-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .access-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <span>Maker Station</span>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav nav-menu" aria-label="Main navigation">
+                <a href="../index.html" class="nav__link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav__link dropdown-toggle">Equipment & Tools</a>
+                    <div class="dropdown-menu">
+                        <a href="laser-cutting.html" class="dropdown-item">Laser Cutting</a>
+                        <a href="3d-printing.html" class="dropdown-item">3D Printing</a>
+                        <a href="silhouette.html" class="dropdown-item">Silhouette Cutting</a>
+                        <a href="rotosonic-nucleus.html" class="dropdown-item">Rotosonic Nucleus</a>
+                        <a href="clay-printer.html" class="dropdown-item">Clay Printer</a>
+                        <a href="3d-scanner.html" class="dropdown-item">3D Scanner</a>
+                    </div>
+                </div>
+                <a href="booking.html" class="nav__link nav__link--active">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Booking & Equipment Access</h1>
+                <p>Reserve equipment and schedule workshop sessions</p>
+            </div>
+        </section>
+
+        <section class="mailing-list-signup" style="background: #f8f9fa; padding: 3rem 0;">
+            <div class="container">
+                <div style="max-width: 700px; margin: 0 auto; text-align: center; background: white; padding: 3rem 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h2 style="margin-bottom: 1rem; color: #2c3e50;">📬 Stay Updated</h2>
+                    <p style="margin-bottom: 2rem; color: #666; font-size: 1.1rem; line-height: 1.6;">
+                        Join our mailing list to receive updates about new equipment, workshop announcements, and important notifications about the Maker Station.
+                    </p>
+                    <a href="https://forms.office.com/e/er4P2BtRij"
+                       class="btn btn-primary"
+                       target="_blank"
+                       style="display: inline-block; padding: 1rem 2.5rem; font-size: 1.1rem; text-decoration: none;">
+                        Sign Up for Updates
+                    </a>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #999;">
+                        We respect your privacy. You can unsubscribe at any time.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-info">
+            <div class="container">
+                <div class="booking-grid">
+                    <div class="booking-section">
+                        <h2>Equipment Access</h2>
+                        <p>Access to Maker Station equipment is available for students working on creative projects. Equipment training and supervision may be required for certain tools.</p>
+
+                        <div class="booking-steps">
+                            <h3>How to Access Equipment</h3>
+                            <ol>
+                                <li>Contact the Maker Station team to discuss your project needs</li>
+                                <li>Complete any required equipment training or inductions</li>
+                                <li>Book equipment time through the SISO system</li>
+                                <li>Bring your project files and materials to your session</li>
+                                <li>Follow all safety protocols and equipment guidelines</li>
+                            </ol>
+                        </div>
+
+                        <div class="booking-button" style="margin-bottom: 2rem;">
+                            <a href="https://tuslsad.siso.co/" class="btn btn-primary" target="_blank">Access SISO Booking System</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-section">
+                        <h2>Contact & Support</h2>
+                        <div class="contact-card">
+                            <p style="text-align: center; margin-bottom: 2rem;">For equipment booking, project consultations, or general inquiries about the Maker Station, please contact us via email:</p>
+                            <div style="text-align: center;">
+                                <a href="mailto:makerstation@tus.ie" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2rem;">
+                                    📧 Email: makerstation@tus.ie
+                                </a>
+                            </div>
+                            <p style="text-align: center; margin-top: 1.5rem; color: #666; font-size: 0.9rem;">
+                                <strong>Response Time:</strong> We typically respond within 1-2 business days<br>
+                                <strong>Office Hours:</strong> Monday to Friday during term time
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipment-access-grid">
+                    <div class="access-card">
+                        <div class="access-icon">✂️</div>
+                        <h3>Laser Cutting</h3>
+                        <p>Book time for laser cutting and engraving projects. Training required for independent use.</p>
+                        <a href="laser-cutting.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="access-card">
+                        <div class="access-icon">🖨️</div>
+                        <h3>3D Printing</h3>
+                        <p>Reserve 3D printers for your projects. File preparation assistance available.</p>
+                        <a href="3d-printing.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="access-card">
+                        <div class="access-icon">📐</div>
+                        <h3>Silhouette Machines</h3>
+                        <p>Book precision cutting equipment for vinyl, paper, and fabric projects.</p>
+                        <a href="silhouette.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="access-card">
+                        <div class="access-icon">🔄</div>
+                        <h3>Rotosonic Nucleus</h3>
+                        <p>Specialized ultrasonic welding equipment. Training required before use.</p>
+                        <a href="rotosonic-nucleus.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="access-card">
+                        <div class="access-icon">🏺</div>
+                        <h3>Clay Printer</h3>
+                        <p>Book ceramic 3D printing sessions for sculptural and functional pottery.</p>
+                        <a href="clay-printer.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="access-card">
+                        <div class="access-icon">📷</div>
+                        <h3>3D Scanner</h3>
+                        <p>Reserve the 3D scanner to capture real-world objects as digital models.</p>
+                        <a href="3d-scanner.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Maker Station</h3>
+                    <p>Digital Fabrication Hub<br>
+                    Creative Technology Resources</p>
+                </div>
+                <div class="footer__section">
+                    <h3>Equipment</h3>
+                    <a href="laser-cutting.html">Laser Cutting</a>
+                    <a href="3d-printing.html">3D Printing</a>
+                    <a href="silhouette.html">Silhouette Machines</a>
+                    <a href="rotosonic-nucleus.html">Rotosonic Nucleus</a>
+                    <a href="clay-printer.html">Clay Printer</a>
+                    <a href="3d-scanner.html">3D Scanner</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Resources</h3>
+                    <a href="laser-cutting.html#tutorials">Tutorials & Guides</a>
+                    <a href="laser-cutting.html#tools">Design Tools</a>
+                    <a href="3d-printing.html#ai-tools">AI Generators</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Contact</h3>
+                    <p>For equipment access and support,<br>
+                    please contact the Maker Station team.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

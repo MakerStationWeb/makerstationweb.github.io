@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Einscan 3D Scanner - Training & Operating Guide">
+    <meta name="keywords" content="3d scanning, einscan, digital capture, 3d modeling">
+    <meta name="author" content="Maker Station">
+    <title>Einscan 3D Scanner - Maker Station</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <span>Maker Station</span>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav nav-menu" aria-label="Main navigation">
+                <a href="../index.html" class="nav__link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav__link dropdown-toggle">Equipment & Tools</a>
+                    <div class="dropdown-menu">
+                        <a href="laser-cutting.html" class="dropdown-item">Laser Cutting</a>
+                        <a href="3d-printing.html" class="dropdown-item">3D Printing</a>
+                        <a href="silhouette.html" class="dropdown-item">Silhouette Cutting</a>
+                        <a href="rotosonic-nucleus.html" class="dropdown-item">Rotosonic Nucleus</a>
+                        <a href="clay-printer.html" class="dropdown-item">Clay Printer</a>
+                        <a href="3d-scanner.html" class="dropdown-item dropdown-item--active">3D Scanner</a>
+                    </div>
+                </div>
+                <a href="booking.html" class="nav__link">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Einscan 3D Scanner</h1>
+                <p>Digital Object Capture - Training & Operating Guide</p>
+            </div>
+        </section>
+
+        <!-- Dropdown Sections -->
+        <section class="dropdown-sections">
+            <div class="container">
+
+                <!-- Introduction Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('introduction')">
+                        <h2>Introduction</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="introduction">
+                        <h3>What is 3D Scanning?</h3>
+                        <p>3D scanning captures the physical geometry of real-world objects and converts them into digital 3D models. The Einscan uses structured light technology to create accurate point clouds that can be processed into mesh models for various applications.</p>
+
+                        <h4>How it Works:</h4>
+                        <p>The scanner projects structured light patterns onto the object's surface and uses cameras to capture how these patterns deform around the object's geometry. This data is processed to create a precise 3D representation of the scanned object.</p>
+
+                        <h4>Applications:</h4>
+                        <ul>
+                            <li>Reverse engineering and design reference</li>
+                            <li>Digital archiving and documentation</li>
+                            <li>3D printing preparation and prototyping</li>
+                            <li>Quality control and measurement</li>
+                            <li>Art and cultural heritage preservation</li>
+                        </ul>
+
+                        <div class="info-box highlight">
+                            <h4>Scanning Capabilities</h4>
+                            <p>The Einscan can capture objects ranging from small detailed items to larger objects, with accuracy suitable for most creative and technical applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training Manual Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('training')">
+                        <h2>Training Manual</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="training">
+                        <div class="info-box highlight">
+                            <h4>⚠️ Training Required</h4>
+                            <p>The 3D scanner requires proper training before use. Contact the Maker Station team to arrange hands-on training covering setup, scanning techniques, and data processing.</p>
+                        </div>
+
+                        <h3>Video Training: How to Scan Objects</h3>
+                        <p>This comprehensive video from Shining 3D demonstrates proper scanning techniques and best practices for achieving high-quality results:</p>
+
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 2rem 0;">
+                            <iframe
+                                src="https://www.youtube.com/embed/4oqg8TN6iM8"
+                                title="How to Scan Objects - Einscan 3D Scanner Training"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;">
+                            </iframe>
+                        </div>
+
+                        <h3>Basic Scanning Process</h3>
+
+                        <h4>Step 1: Object Preparation</h4>
+                        <p>Clean the object surface, place on a stable non-reflective surface, and ensure adequate lighting. Consider the object's material and surface properties for optimal results.</p>
+
+                        <h4>Step 2: Scanner Setup</h4>
+                        <p>Connect the scanner via USB, launch Einscan software, calibrate if required, and select the appropriate scanning mode for your object.</p>
+
+                        <h4>Step 3: Scanning Process</h4>
+                        <p>Position the scanner at the optimal distance, follow software guidance for capture sequence, and maintain steady movement during handheld scanning to ensure complete coverage.</p>
+
+                        <h4>Step 4: Data Processing</h4>
+                        <p>Review the captured point cloud data, remove unwanted points, generate mesh from point cloud, and export in the desired file format.</p>
+                    </div>
+                </div>
+
+                <!-- Scanning Techniques Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('techniques')">
+                        <h2>Scanning Techniques</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="techniques">
+                        <h3>Object Considerations</h3>
+
+                        <h4>Best Results With:</h4>
+                        <ul>
+                            <li>Matte or semi-matte surfaces</li>
+                            <li>Objects with sufficient detail and texture</li>
+                            <li>Non-transparent, rigid objects</li>
+                            <li>Stable positioning during scanning</li>
+                        </ul>
+
+                        <h4>Challenging Materials:</h4>
+                        <div class="parameter-guide">
+                            <p><strong>Reflective surfaces:</strong> May require dulling spray or powder coating</p>
+                            <p><strong>Dark materials:</strong> May need additional lighting or surface treatment</p>
+                            <p><strong>Transparent objects:</strong> Often require special preparation techniques</p>
+                            <p><strong>Very small details:</strong> May be limited by scanner resolution</p>
+                        </div>
+
+                        <h3>Best Practices</h3>
+                        <p><strong>Lighting:</strong> Use consistent, diffused lighting and avoid direct sunlight or harsh shadows.</p>
+                        <p><strong>Movement:</strong> Move the scanner smoothly and steadily, maintaining optimal distance with overlapping scan areas.</p>
+                        <p><strong>Environment:</strong> Use a stable work surface, minimize vibrations, and control ambient lighting conditions.</p>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('resources')">
+                        <h2>Resources</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="resources">
+                        <div class="resource-grid">
+                            <div class="resource-card">
+                                <div class="tool-badge">Video</div>
+                                <h3>Official Training Video</h3>
+                                <p>Comprehensive scanning tutorial from Shining 3D covering techniques and best practices.</p>
+                                <a href="https://www.youtube.com/watch?v=4oqg8TN6iM8" class="btn btn-primary" target="_blank">Watch on YouTube</a>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="tool-badge">Software</div>
+                                <h3>Einscan Software</h3>
+                                <p>Download the latest version of Einscan software for optimal scanning performance.</p>
+                                <a href="https://www.einscan.com/support/software-downloads/" class="btn btn-primary" target="_blank">Download Software</a>
+                            </div>
+                        </div>
+
+                        <h4>File Formats</h4>
+                        <p><strong>PLY:</strong> Point cloud and mesh data | <strong>STL:</strong> 3D printing ready | <strong>OBJ:</strong> Universal 3D model | <strong>ASC:</strong> Point cloud data</p>
+
+                        <h4>Support Resources</h4>
+                        <p><strong>Shining 3D Support:</strong> <a href="https://www.einscan.com/support/" target="_blank">www.einscan.com/support</a></p>
+                    </div>
+                </div>
+
+                <!-- FAQ Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('faq')">
+                        <h2>Frequently Asked Questions</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="faq">
+                        <div class="faq-item">
+                            <h4>What size objects can be scanned?</h4>
+                            <p>The Einscan handles objects from small detailed items (few centimeters) to larger objects (up to several meters with proper technique). Optimal size depends on the scanning mode used.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How accurate are the scans?</h4>
+                            <p>Scanning accuracy depends on object size, surface properties, and technique. The Einscan can achieve sub-millimeter accuracy under optimal conditions.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Can I scan reflective or transparent objects?</h4>
+                            <p>These materials are challenging for structured light scanning and often require surface treatment with dulling spray or powder to achieve good results.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How long does scanning take?</h4>
+                            <p>Time varies based on object complexity and desired quality. Simple objects may take minutes, while complex detailed objects may require longer scan times and multiple passes.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Can scanned objects be 3D printed directly?</h4>
+                            <p>Scanned models often require post-processing before 3D printing, including mesh repair, scaling, and adding support structures. The software includes tools for basic editing.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="notice-section">
+            <div class="container">
+                <div class="notice-card">
+                    <div class="notice-icon">📷</div>
+                    <div class="notice-content">
+                        <h3>Ready to Start Scanning?</h3>
+                        <p>The Einscan 3D Scanner requires hands-on training to achieve optimal results. Contact the Maker Station team to schedule training and learn proper scanning techniques for your specific projects.</p>
+                        <a href="mailto:makerstation@tus.ie" class="btn btn-primary" style="margin-top: 1rem;">Book Training Session</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Maker Station</h3>
+                    <p>Equipment & Tools Hub<br>
+                    Creative Technology Resources</p>
+                </div>
+                <div class="footer__section">
+                    <h3>Equipment</h3>
+                    <a href="laser-cutting.html">Laser Cutting</a>
+                    <a href="3d-printing.html">3D Printing</a>
+                    <a href="silhouette.html">Silhouette Machines</a>
+                    <a href="rotosonic-nucleus.html">Rotosonic Nucleus</a>
+                    <a href="clay-printer.html">Clay Printer</a>
+                    <a href="3d-scanner.html">3D Scanner</a>
+                </div>
+                <div class="footer__section">
+                    <h3>3D Scanner Resources</h3>
+                    <a href="#introduction">Introduction</a>
+                    <a href="#training">Training Video</a>
+                    <a href="#techniques">Techniques</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Contact</h3>
+                    <p>For equipment access and training,<br>
+                    please contact the Maker Station team.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            const section = content.closest('.dropdown-section');
+
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.closest('.dropdown-section').classList.remove('active');
+                }
+            });
+
+            // Toggle current dropdown
+            content.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+
+        // Open first dropdown by default
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleDropdown('introduction');
+        });
+    </script>
+</body>
+</html>

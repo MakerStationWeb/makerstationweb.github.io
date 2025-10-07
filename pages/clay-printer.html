@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clay 3D printer resources for Maker Station">
+    <title>Clay Printer - Maker Station</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <span>Maker Station</span>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav nav-menu" aria-label="Main navigation">
+                <a href="../index.html" class="nav__link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav__link dropdown-toggle">Equipment & Tools</a>
+                    <div class="dropdown-menu">
+                        <a href="laser-cutting.html" class="dropdown-item">Laser Cutting</a>
+                        <a href="3d-printing.html" class="dropdown-item">3D Printing</a>
+                        <a href="silhouette.html" class="dropdown-item">Silhouette Cutting</a>
+                        <a href="rotosonic-nucleus.html" class="dropdown-item">Rotosonic Nucleus</a>
+                        <a href="clay-printer.html" class="dropdown-item dropdown-item--active">Clay Printer</a>
+                        <a href="3d-scanner.html" class="dropdown-item">3D Scanner</a>
+                    </div>
+                </div>
+                <a href="booking.html" class="nav__link">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Clay 3D Printer</h1>
+                <p>Ceramic Additive Manufacturing - Training & Operating Guide</p>
+            </div>
+        </section>
+
+        <!-- Dropdown Sections -->
+        <section class="dropdown-sections">
+            <div class="container">
+
+                <!-- Introduction Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('introduction')">
+                        <h2>Introduction</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="introduction">
+                        <h3>What is Clay 3D Printing?</h3>
+                        <p>Clay 3D printing, also known as ceramic additive manufacturing, builds ceramic objects layer by layer using clay material extruded through a nozzle. This technology combines traditional ceramic techniques with modern digital fabrication, enabling complex geometries impossible with conventional pottery methods.</p>
+
+                        <h4>How it Works:</h4>
+                        <p>Clay material is loaded into an extruder system that pushes the clay through a nozzle onto a build platform. The extruder follows digital toolpaths to build the object layer by layer. After printing, objects typically require drying and firing in a kiln to achieve final strength and finish.</p>
+
+                        <h4>Applications:</h4>
+                        <ul>
+                            <li>Sculptural artworks and installations</li>
+                            <li>Functional pottery and vessels</li>
+                            <li>Architectural ceramic components</li>
+                            <li>Prototype ceramic products</li>
+                            <li>Educational ceramic projects</li>
+                            <li>Complex geometric forms</li>
+                        </ul>
+
+                        <div class="info-box highlight">
+                            <h4>Clay Material Properties</h4>
+                            <p>Requires proper clay consistency and plasticity. Most clay 3D printers work with stoneware, porcelain, or specially formulated clay bodies designed for extrusion printing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training Manual Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('training')">
+                        <h2>Training Manual</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="training">
+                        <div class="info-box highlight">
+                            <h4>⚠️ Advanced Training Required</h4>
+                            <p>Clay 3D printing requires comprehensive training in both digital design and ceramic processes. Contact the Maker Station team to arrange training covering software, clay preparation, printing, and post-processing.</p>
+                        </div>
+
+                        <h3>Complete Workflow Process</h3>
+
+                        <h4>Step 1: Design Preparation</h4>
+                        <p>Create 3D models suitable for clay printing, considering wall thickness, overhangs, and support requirements. Design must account for clay shrinkage during drying and firing.</p>
+
+                        <h4>Step 2: Clay Preparation</h4>
+                        <p>Prepare clay to proper consistency for extrusion. Clay must be well-wedged, free of air bubbles, and have appropriate plasticity for smooth extrusion.</p>
+
+                        <h4>Step 3: Printer Setup</h4>
+                        <p>Load clay into extruder system, calibrate printer settings, set layer height and extrusion parameters based on clay type and desired object properties.</p>
+
+                        <h4>Step 4: Printing Process</h4>
+                        <p>Monitor printing process, ensure consistent extrusion, and make adjustments as needed. Printing speed is typically slower than plastic 3D printing.</p>
+
+                        <h4>Step 5: Post-Processing</h4>
+                        <p>Allow printed object to dry slowly to leather-hard stage, perform any necessary finishing work, then proceed with standard ceramic firing processes.</p>
+
+                        <div class="info-box warning">
+                            <h4>Critical Considerations</h4>
+                            <ul>
+                                <li>Clay must maintain proper moisture content throughout printing</li>
+                                <li>Support structures may be needed for complex geometries</li>
+                                <li>Account for 12-15% shrinkage during drying and firing</li>
+                                <li>Hollow forms require drainage holes for firing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('resources')">
+                        <h2>Resources</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="resources">
+                        <div class="resource-grid">
+                            <div class="resource-card">
+                                <div class="tool-badge">Software</div>
+                                <h3>Ceramic Design Software</h3>
+                                <p>Specialized software for ceramic 3D printing with clay-specific slicing parameters and toolpath generation.</p>
+                                <p><em>Specific software recommendations available during training sessions.</em></p>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="tool-badge">Materials</div>
+                                <h3>Clay Body Selection</h3>
+                                <p>Information on compatible clay types, consistency requirements, and preparation methods for successful clay 3D printing.</p>
+                                <p><em>Material specifications provided during training.</em></p>
+                            </div>
+                        </div>
+
+                        <h4>Post-Processing Requirements</h4>
+                        <p><strong>Drying:</strong> Controlled drying to leather-hard stage | <strong>Finishing:</strong> Surface refinement and detail work | <strong>Firing:</strong> Standard ceramic kiln firing process</p>
+
+                        <h4>Design Considerations</h4>
+                        <p><strong>Wall Thickness:</strong> Minimum thickness requirements | <strong>Overhangs:</strong> Angle limitations | <strong>Shrinkage:</strong> Account for 12-15% size reduction</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('faq')">
+                        <h2>Frequently Asked Questions</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="faq">
+                        <div class="faq-item">
+                            <h4>What types of clay can be used?</h4>
+                            <p>Stoneware, porcelain, and specially formulated clay bodies designed for extrusion printing. Clay must have proper plasticity and consistency for smooth extrusion.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How large can printed objects be?</h4>
+                            <p>Print size depends on specific printer capabilities. Objects must fit within the build volume and consider structural limitations of unfired clay.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Do printed objects need to be fired?</h4>
+                            <p>Yes, printed clay objects require standard ceramic firing processes (bisque firing and optionally glaze firing) to achieve final strength and functionality.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What are the design limitations?</h4>
+                            <p>Overhangs require support, hollow forms need drainage holes, and designs must account for clay shrinkage during drying and firing. Wall thickness must meet minimum requirements.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How long does the complete process take?</h4>
+                            <p>Printing time varies by size and complexity. Factor in additional time for drying (days), bisque firing (12-24 hours), and glaze firing (12-24 hours) if applicable.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Maker Station</h3>
+                    <p>Equipment & Tools Hub<br>
+                    Creative Technology Resources</p>
+                </div>
+                <div class="footer__section">
+                    <h3>Equipment</h3>
+                    <a href="laser-cutting.html">Laser Cutting</a>
+                    <a href="3d-printing.html">3D Printing</a>
+                    <a href="silhouette.html">Silhouette Machines</a>
+                    <a href="clay-printer.html">Clay Printer</a>
+                    <a href="3d-scanner.html">3D Scanner</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Available Resources</h3>
+                    <a href="laser-cutting.html">Laser Cutting Tools</a>
+                    <a href="3d-printing.html">3D Printing Software</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Contact</h3>
+                    <p>For equipment access and training,<br>
+                    please contact the Maker Station team.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            const section = content.closest('.dropdown-section');
+
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.closest('.dropdown-section').classList.remove('active');
+                }
+            });
+
+            // Toggle current dropdown
+            content.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+
+        // Open first dropdown by default
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleDropdown('introduction');
+        });
+    </script>
+</body>
+</html>

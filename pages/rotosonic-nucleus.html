@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rotosonic Nucleus - Advanced ultrasonic metal welding technology for precision joining applications">
+    <meta name="keywords" content="ultrasonic welding, metal welding, rotosonic, nucleus, precision joining">
+    <meta name="author" content="Maker Station">
+    <title>Rotosonic Nucleus - Maker Station</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <span>Maker Station</span>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav nav-menu" aria-label="Main navigation">
+                <a href="../index.html" class="nav__link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav__link dropdown-toggle">Equipment & Tools</a>
+                    <div class="dropdown-menu">
+                        <a href="laser-cutting.html" class="dropdown-item">Laser Cutting</a>
+                        <a href="3d-printing.html" class="dropdown-item">3D Printing</a>
+                        <a href="silhouette.html" class="dropdown-item">Silhouette Cutting</a>
+                        <a href="rotosonic-nucleus.html" class="dropdown-item dropdown-item--active">Rotosonic Nucleus</a>
+                        <a href="clay-printer.html" class="dropdown-item">Clay Printer</a>
+                        <a href="3d-scanner.html" class="dropdown-item">3D Scanner</a>
+                    </div>
+                </div>
+                <a href="booking.html" class="nav__link">Booking</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>NUCLEUS Rotosonic DX1</h1>
+                <p>Ultrasonic Welding Machine - Training & Operating Guide</p>
+            </div>
+        </section>
+
+
+        <!-- Dropdown Sections -->
+        <section class="dropdown-sections">
+            <div class="container">
+
+                <!-- Introduction Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('introduction')">
+                        <h2>Introduction</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="introduction">
+                        <h3>What is Ultrasonic Welding?</h3>
+                        <p>Ultrasonic welding connects thermoplastic materials through internal friction, heating, and fusion. The weld strength depends on three key parameters: power, pressure, and time.</p>
+
+                        <h4>How it Works:</h4>
+                        <p>The process converts standard 50 Hz electrical power into 35 kHz ultrasonic frequency. This high-frequency energy becomes mechanical vibrations that create friction between materials. As the sonotrode oscillates against the anvil wheel, the material heats up and forms a plasticized layer. Simultaneous pressure from the wheels strengthens the bond as the material cools.</p>
+
+                        <h4>Material Requirements:</h4>
+                        <p>Only thermoplastic materials can be welded effectively. The best results require materials with at least 60% synthetic fibers.</p>
+
+                        <div class="info-box highlight">
+                            <h4>Quick Material Test</h4>
+                            <p>Hold a small sample near a flame. If it melts, it can likely be welded. If it burns or chars without melting, it's not suitable for ultrasonic welding.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training Manual Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('training')">
+                        <h2>Training Manual</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="training">
+                        <div class="info-box highlight">
+                            <h4>⚠️ Important Note</h4>
+                            <p>All welding machine settings are fundamentally dependent on the specific properties of the material to be welded. The optimum values must be determined by means of test welds.</p>
+                        </div>
+
+                        <h3>Finding the Right Parameters</h3>
+                        <p>The main challenge is determining the correct settings for your specific material. Each material requires testing to find optimal parameters. Once established, production becomes straightforward.</p>
+
+                        <h4>Step 1: Material Check</h4>
+                        <p>Ensure your material is thermoplastic, has suitable thickness for the DX1, and the seam area is clean.</p>
+
+                        <h4>Step 2: Start with Baseline</h4>
+                        <p>Begin with 40W power and 40N pressure at moderate speed, then test and adjust incrementally.</p>
+
+                        <div class="parameter-guide">
+                            <h4>Adjustment Guide:</h4>
+                            <p><strong>Weak seam:</strong> Increase power, increase pressure, or decrease speed</p>
+                            <p><strong>Material burning:</strong> Decrease power, decrease pressure, or increase speed</p>
+                            <p><em>Change one parameter at a time to understand its effect.</em></p>
+                        </div>
+
+                        <h4>Document Your Settings</h4>
+                        <p>Record material type, thickness, final power/pressure settings, welding speed, and wheel configuration for future reference.</p>
+                    </div>
+                </div>
+
+                <!-- Welding Tutorial Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('tutorial')">
+                        <h2>Step-by-Step Welding Tutorial</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="tutorial">
+                        <div class="info-box warning">
+                            <h4>⚠️ Important: Material Thickness Selection</h4>
+                            <p>Select the appropriate guide based on the thickness of the plastic you are working with:</p>
+                            <ul>
+                                <li><strong>Thin Plastics:</strong> Less than 1mm thickness</li>
+                                <li><strong>Middle Plastics:</strong> 1-3mm thickness</li>
+                                <li><strong>Thick Plastics:</strong> Greater than 3mm thickness</li>
+                            </ul>
+                        </div>
+
+                        <h3>Step 1: Machine Setup</h3>
+                        <p>Before beginning any welding operation, proper machine setup is critical for achieving consistent results. Start by ensuring the machine is properly connected to power and verify that the ultrasonic generator is turned on and functioning correctly. The next crucial step is selecting and installing the appropriate anvil wheel - this choice significantly affects the quality of your weld and should be based on both your specific application requirements and the thickness of the material you'll be working with. If you're uncertain about which wheel to use, consult the manufacturer's recommendations or refer to previous successful projects with similar materials. Once the wheel is installed, carefully load your material into the machine, paying close attention to proper alignment and ensuring the material is appropriately tensioned - uneven tension or misalignment can result in inconsistent welds or material damage.</p>
+
+                        <h3>Step 2: Initial Parameter Setup</h3>
+                        <p>Setting the correct initial parameters is one of the most important steps in the welding process. If you're working with a new material that you haven't welded before, it's always best to start conservatively with settings on the lower end of the recommended range for your material thickness. This cautious approach helps prevent material damage while you learn how the specific material responds to ultrasonic welding. The three key parameters you'll need to configure are power (measured in watts), pressure (expressed as a percentage of maximum), and welding speed (measured in meters per minute). Each material thickness category has its own recommended starting ranges:</p>
+
+                        <div class="parameter-guide">
+                            <h4>Thin Plastics (&lt; 1mm)</h4>
+                            <ul>
+                                <li><strong>Power:</strong> 10-20 watts</li>
+                                <li><strong>Pressure:</strong> 5-15% of maximum</li>
+                                <li><strong>Speed:</strong> 1-2 m/min</li>
+                            </ul>
+                        </div>
+
+                        <div class="parameter-guide">
+                            <h4>Medium Plastics (1-3mm)</h4>
+                            <ul>
+                                <li><strong>Power:</strong> 20-30 watts</li>
+                                <li><strong>Pressure:</strong> 10-20% of maximum</li>
+                                <li><strong>Speed:</strong> 1-2 m/min</li>
+                            </ul>
+                        </div>
+
+                        <div class="parameter-guide">
+                            <h4>Thick Plastics (&gt; 3mm)</h4>
+                            <ul>
+                                <li><strong>Power:</strong> 30-50 watts</li>
+                                <li><strong>Pressure:</strong> 20-40% of maximum</li>
+                                <li><strong>Speed:</strong> 1-2 m/min</li>
+                            </ul>
+                        </div>
+
+                        <p><em><strong>Helpful Tip:</strong> If you're welding a material similar to one you've worked with previously, you can save time by starting with those previously successful settings as your baseline, then make minor adjustments as needed for your current application.</em></p>
+
+                        <h3>Step 3: Test Welding</h3>
+                        <p>Once you've configured your initial parameters, it's time to perform a test weld to evaluate how your material responds. Begin the welding process by activating the machine using either the foot pedal or the start button, depending on your machine's configuration. During this initial test, careful observation is crucial - watch the welding process closely, looking for visual indicators such as signs of melting at the seam, evidence of bonding between the material layers, and any unwanted material distortion or damage. After running a short test weld (typically just a few centimeters is sufficient), stop the process so you can evaluate the results without wasting material.</p>
+
+                        <h3>Step 4: Evaluate Weld Quality</h3>
+                        <p>The evaluation phase is where you determine whether your initial settings are appropriate or need adjustment. Start with a thorough visual inspection of the test weld, examining it for consistency along its entire length, checking for uniformity in the weld seam, and looking for any signs of damage such as tears, excessive melting, or burn marks. After the visual inspection, perform a physical peel test to assess the actual strength of the weld - gently try to separate the welded materials to gauge how well they've bonded. The results of this evaluation will determine your next steps: if the weld appears weak, inconsistent, or shows poor bonding, you'll need to proceed to Step 5 to adjust your parameters. However, if the weld demonstrates good strength, appears consistent throughout, and shows proper bonding without damage, you can skip ahead to Step 7 to optimize and save your settings.</p>
+
+                        <h3>Step 5: Adjust Power and Pressure</h3>
+                        <p>When your test weld shows signs of weakness or inconsistency, the first parameter to adjust is typically the power setting. Make small, incremental increases to the power level - the size of these increments should be proportional to your material thickness. For thin plastics (less than 1mm), increase power by 2-5 watts at a time; for medium plastics (1-3mm), use increments of 5-10 watts; and for thick plastics (greater than 3mm), also increase by 5-10 watts per adjustment. After each power adjustment, run another test weld to evaluate the improvement.</p>
+
+                        <p>However, if you observe excessive melting, burning, or material damage during your test welds, this indicates that you have too much power. In this case, reduce the power setting accordingly, again making incremental changes to avoid overcorrection. The goal is to find the sweet spot where you have enough energy to create a strong bond without causing damage to the material.</p>
+
+                        <p>If you've increased the power to near the upper limit recommended for your material thickness and the weld is still showing signs of weakness, it's time to start adjusting the pressure instead. Pressure adjustments should also be made incrementally and in proportion to your material thickness: for thin plastics, increase pressure by 2-5% of maximum at a time; for medium plastics, use 5-10% increments; and for thick plastics, also adjust by 5-10%. Remember to test after each adjustment to evaluate the results.</p>
+
+                        <div class="info-box warning">
+                            <p>⚠️ <strong>Critical Safety Note:</strong> Be extremely cautious when increasing pressure, as excessive pressure can cause the plastic to distort, tear, or create stress points that compromise the integrity of your finished piece. If you notice any material deformation, reduce the pressure immediately and reassess your approach.</p>
+                        </div>
+
+                        <h3>Step 6: Adjust Welding Speed and Design</h3>
+                        <p>If you've optimized both power and pressure settings but still aren't achieving consistent, strong welds, it's time to consider adjustments to your welding speed and potentially the design of the weld itself. Sometimes the issue isn't about how much energy you're applying, but rather how long that energy is being applied to the material.</p>
+
+                        <p>First, try reducing your welding speed by 0.5 to 1 meter per minute. This slower speed allows the ultrasonic energy more time to penetrate and heat the material, which can be particularly beneficial for materials that are slow to respond to heating or when working with thicker cross-sections. After adjusting the speed, run another test weld to see if the additional bonding time improves the weld quality.</p>
+
+                        <p>If speed adjustments don't solve the problem, consider redesigning the weld itself. One effective approach is to increase the overlap area of the weld, creating a larger bonding surface that distributes stress more effectively. Another technique is to use a fold-over or hem design where you fold the material back on itself at the weld point, effectively doubling the thickness and creating a stronger joint. These design modifications can dramatically improve weld strength without requiring any changes to your machine parameters.</p>
+
+                        <p>For particularly thick plastics (greater than 3mm), if a single welding pass isn't providing sufficient bonding throughout the material depth, you might need to employ multiple welding passes. This technique allows you to build up the weld strength gradually, with each pass contributing to the overall bond without overheating or damaging any single layer of the material.</p>
+
+                        <h3>Step 7: Optimize and Save Settings</h3>
+                        <p>Once you've successfully achieved a strong, consistent weld that passes both visual inspection and strength testing, take the time to fine-tune your settings for optimal results. Make small adjustments to power, pressure, and speed as needed to achieve the best possible weld quality while using the minimum necessary energy and resources - this not only improves efficiency but also extends the life of your equipment and reduces material stress.</p>
+
+                        <p>An important technical checkpoint at this stage is to verify that your amplitude setting is within the optimal 60-90% range. This range provides the best balance of power control and welding efficiency - settings below 60% may not provide enough energy for consistent welds, while settings above 90% can cause excessive wear on the machine components and may damage sensitive materials.</p>
+
+                        <p>Finally, and critically important for future efficiency, save your optimized settings as a program recipe in the machine's memory. Make sure to clearly label this recipe with detailed information including the material type, manufacturer (if applicable), thickness, and any other relevant characteristics. This practice will save you considerable time and effort when you need to weld this same material in the future, as you'll be able to simply load the recipe and begin production immediately rather than repeating the entire parameter optimization process.</p>
+
+                        <h3>Step 8: Production Welding</h3>
+                        <p>With your parameters optimized and saved, you're now ready to begin production welding using these proven settings. However, even with perfect parameters, it's important to maintain vigilance throughout the production process. Materials can have natural variations from batch to batch or even within a single roll, and environmental factors such as temperature and humidity can affect welding performance throughout the day.</p>
+
+                        <p>Establish a regular inspection routine where you periodically examine the weld quality during production runs. How frequently you inspect will depend on your specific application - for critical applications, you might inspect every few pieces, while for less critical work, inspecting every 15-30 minutes might be sufficient. If you notice any changes in weld quality, don't hesitate to make small adjustments to your parameters to compensate for material variations or environmental changes. This proactive approach helps maintain consistent quality and prevents the accumulation of defective pieces before you notice there's a problem.</p>
+
+                        <div class="info-box highlight">
+                            <p><strong>Remember:</strong> Prioritize safety, refer to the machine manual for detailed instructions, and maintain thorough records for each material and thickness. Experimentation and observation are crucial for achieving the best results when welding plastics of various thicknesses with the NUCLEUS Rotosonic DX1 ultrasonic welding machine.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety & Technical Notes Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('safety')">
+                        <h2>Safety & Technical Notes</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="safety">
+                        <h3>Safety Guidelines</h3>
+                        <div class="info-box warning">
+                            <ul>
+                                <li><strong>Personal Protection:</strong> Always wear appropriate personal protective equipment (PPE) such as safety glasses and hearing protection.</li>
+                                <li><strong>Hand Safety:</strong> Keep hands and fingers away from the welding area during operation to avoid pinching or crushing injuries.</li>
+                                <li><strong>Electrical Safety:</strong> Ensure the machine is properly grounded and all safety features are functioning correctly before use.</li>
+                            </ul>
+                        </div>
+
+                        <h3>Material Compatibility</h3>
+                        <ul>
+                            <li>Verify that the plastic materials you intend to weld are compatible with ultrasonic welding. Some plastics, such as thermosets or highly filled plastics, may not weld effectively.</li>
+                            <li>When welding dissimilar materials, ensure they have similar melting temperatures and are chemically compatible to form a strong bond.</li>
+                        </ul>
+
+                        <h3>Anvil Wheel Selection</h3>
+                        <ul>
+                            <li>Choose the appropriate anvil wheel for your material and application. The pattern, knurl depth, and diameter of the anvil wheel can significantly affect weld quality.</li>
+                            <li>Consult the manufacturer's recommendations or conduct testing to determine the best anvil wheel for your specific needs.</li>
+                        </ul>
+
+                        <h3>Fixture Design</h3>
+                        <ul>
+                            <li>Use fixturing to ensure consistent alignment and pressure distribution of the materials being welded.</li>
+                            <li>Proper fixturing can help prevent misalignment, slippage, or uneven welding, particularly for complex part geometries.</li>
+                        </ul>
+
+                        <h3>Energy Directors</h3>
+                        <ul>
+                            <li>Consider using energy directors (raised triangular or semicircular protrusions) on one of the mating surfaces to concentrate ultrasonic energy and improve welding efficiency.</li>
+                            <li>Energy directors are especially useful for welding thick or difficult-to-weld materials.</li>
+                        </ul>
+
+                        <h3>Horn and Booster Maintenance</h3>
+                        <ul>
+                            <li>Regularly inspect the ultrasonic horn and booster for wear, damage, or contamination. Clean or replace these components as necessary to ensure consistent welding performance.</li>
+                            <li>Proper maintenance of the horn and booster is crucial for efficient energy transfer and weld quality.</li>
+                        </ul>
+
+                        <h3>Calibration and Testing</h3>
+                        <ul>
+                            <li>Regularly calibrate the machine's power output, pressure, and speed settings to ensure accuracy and consistency.</li>
+                            <li>Perform routine quality control tests on welded samples to verify weld strength, consistency, and appearance.</li>
+                        </ul>
+
+                        <h3>Record-Keeping</h3>
+                        <ul>
+                            <li>Maintain detailed records of the welding parameters, materials, and anvil wheels used for each application.</li>
+                            <li>Good record-keeping practices facilitate troubleshooting, process optimization, and repeatability.</li>
+                        </ul>
+
+                        <h3>Training Requirements</h3>
+                        <ul>
+                            <li>Ensure that all operators are properly trained in the safe and effective use of the ultrasonic welding machine, including setup, operation, troubleshooting, and maintenance.</li>
+                            <li>Regular refresher training can help maintain operator skills and knowledge.</li>
+                        </ul>
+
+                        <h3>Seeking Assistance</h3>
+                        <p>If you encounter persistent welding issues or have questions about your specific application, don't hesitate to reach out to the machine manufacturer or an experienced ultrasonic welding professional for guidance.</p>
+                    </div>
+                </div>
+
+                <!-- Wheel Configuration Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('wheels')">
+                        <h2>Wheel Configuration</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="wheels">
+                        <h3>Cut & Weld (CW) System</h3>
+                        <p>The CW system performs welding and cutting in a single operation. Choose the configuration based on your application needs.</p>
+
+                        <h4>Option A: Welding + Cutting</h4>
+                        <div class="wheel-config">
+                            <img src="../images/welding wheel cutting wheel demo install.png" alt="Welding wheel and CW cutting wheel configuration" style="max-width: 100%; height: auto; border-radius: 8px; margin: 1rem 0;">
+                            <p><strong>Setup:</strong> Welding wheel (left) + CW cutting wheel (right)</p>
+                            <p><strong>Use for:</strong> Applications requiring both welding and cutting with independent pressure control for each function.</p>
+                        </div>
+
+                        <h4>Option B: Cutting + Transport</h4>
+                        <div class="wheel-config">
+                            <img src="../images/cutting wheel cw transport wheel install.png" alt="Cutting wheel and CW transport wheel configuration" style="max-width: 100%; height: auto; border-radius: 8px; margin: 1rem 0;">
+                            <p><strong>Setup:</strong> Cutting wheel (left) + CW transport wheel (right, passive)</p>
+                            <p><strong>Use for:</strong> Clean cutting applications where reliable material guidance is essential.</p>
+                        </div>
+
+                        <h4>Cutting Angles (15° to 75°)</h4>
+                        <p><strong>Lower angles (15°-30°):</strong> Less heat, better for thin materials</p>
+                        <p><strong>Higher angles (60°-75°):</strong> More heat and plasticization, better for thick materials</p>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('resources')">
+                        <h2>Resources</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="resources">
+                        <div class="resource-grid">
+                            <div class="resource-card">
+                                <div class="tool-badge">Manual</div>
+                                <h3>Nucleus 2017 Complete Manual</h3>
+                                <p>Comprehensive operation manual covering system overview, technical specifications, and detailed operating procedures.</p>
+                                <a href="../assets/images/Nucleus_2017_DE_EN_web.pdf" class="btn btn-primary" target="_blank">Download Manual (PDF)</a>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="tool-badge">Technical</div>
+                                <h3>DX1 Ecoline Documentation</h3>
+                                <p>Technical documentation for the DX1 Ecoline variant with simplified operation modes.</p>
+                                <a href="../assets/images/Nucleus_DX1_Ecoline_DE_EN_web.pdf" class="btn btn-primary" target="_blank">Download Documentation (PDF)</a>
+                            </div>
+                        </div>
+
+                        <h4>Support Contact</h4>
+                        <p><strong>NUCLEUS Support Hotline:</strong> +49 (211) 41555900<br>
+                        <strong>Website:</strong> <a href="http://www.nucleusultrasonics.com" target="_blank">www.nucleusultrasonics.com</a></p>
+                    </div>
+                </div>
+
+                <!-- FAQ Dropdown -->
+                <div class="dropdown-section">
+                    <div class="dropdown-header" onclick="toggleDropdown('faq')">
+                        <h2>Frequently Asked Questions</h2>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="faq">
+                        <div class="faq-item">
+                            <h4>What materials can be welded?</h4>
+                            <p>Only thermoplastic materials can be welded. Best results are achieved with materials containing a minimum of 60% synthetic fibers. A simple test: materials that melt under direct heat can potentially be welded, whereas materials that burn or char are not suitable.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Can EVA foam be welded?</h4>
+                            <p>EVA foam weldability is uncertain and requires testing to determine suitability. Each material must be tested before welding to understand its behavior.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How do I determine the right parameters?</h4>
+                            <p>Start with baseline settings (40W power / 40N pressure) and adjust incrementally based on test results. The biggest challenge is determining the correct parameters - this requires systematic testing with your specific material.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Which wheel configuration should I use?</h4>
+                            <p>Use <strong>Welding + CW Cutting</strong> when you want to weld and cut in one operation with separate pressure control. Use <strong>Cutting + CW Transport</strong> when you need clean cuts with reliable material transport.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What does the cutting angle affect?</h4>
+                            <p>Higher cutting angles (60°-75°) create more material plasticization, suitable for thick materials. Lower angles (15°-30°) are better for thin, delicate materials.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Who can I contact for support?</h4>
+                            <p>NUCLEUS Support Hotline: +49 (211) 41555900<br>
+                            Website: <a href="http://www.nucleusultrasonics.com" target="_blank">www.nucleusultrasonics.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="notice-section">
+            <div class="container">
+                <div class="notice-card">
+                    <div class="notice-icon">⚠️</div>
+                    <div class="notice-content">
+                        <h3>Training Required</h3>
+                        <p>The NUCLEUS Rotosonic DX1 requires proper training before use. Contact the Maker Station team to arrange training sessions covering safety protocols, parameter determination, and hands-on operation.</p>
+                        <a href="mailto:makerstation@tus.ie" class="btn btn-primary" style="margin-top: 1rem;">Contact for Training</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Maker Station</h3>
+                    <p>Equipment & Tools Hub<br>
+                    Creative Technology Resources</p>
+                </div>
+                <div class="footer__section">
+                    <h3>Equipment</h3>
+                    <a href="laser-cutting.html">Laser Cutting</a>
+                    <a href="3d-printing.html">3D Printing</a>
+                    <a href="silhouette.html">Silhouette Machines</a>
+                    <a href="rotosonic-nucleus.html">Rotosonic Nucleus</a>
+                    <a href="clay-printer.html">Clay Printer</a>
+                    <a href="3d-scanner.html">3D Scanner</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Rotosonic Resources</h3>
+                    <a href="#introduction">Introduction</a>
+                    <a href="#how-to-use">How to Use</a>
+                    <a href="#resources">Documentation</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer__section">
+                    <h3>Contact</h3>
+                    <p>For equipment training and access,<br>
+                    please contact the Maker Station team.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            const section = content.closest('.dropdown-section');
+
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.closest('.dropdown-section').classList.remove('active');
+                }
+            });
+
+            // Toggle current dropdown
+            content.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+
+        // Open first dropdown by default
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleDropdown('introduction');
+        });
+    </script>
+</body>
+</html>

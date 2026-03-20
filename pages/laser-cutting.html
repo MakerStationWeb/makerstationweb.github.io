@@ -128,7 +128,7 @@
                         <!-- LightBurn Nesting -->
                         <div class="resource-card">
                             <div class="tool-preview" data-url="https://lightburnsoftware.com"></div>
-                            <span class="tool-badge premium">$60</span>
+                            <span class="tool-badge premium">Paid</span>
                             <h3>LightBurn Nesting</h3>
                             <p>Professional nesting built into LightBurn software. Automatic and manual nesting options with advanced optimization.</p>
                             <ul>
@@ -153,7 +153,7 @@
                         <!-- Cuttle -->
                         <div class="resource-card">
                             <div class="tool-preview" data-url="https://cuttle.xyz"></div>
-                            <span class="tool-badge free">Free & Premium</span>
+                            <span class="tool-badge free">Free</span>
                             <h3>Cuttle</h3>
                             <p>Premier browser-based parametric design tool built specifically for laser cutting. Create jewelry, ornaments, and personalized items through drag-and-drop interfaces.</p>
                             <ul>
@@ -428,7 +428,7 @@
                         <!-- LightBurn -->
                         <div class="resource-card">
                             <div class="tool-preview" data-url="https://lightburnsoftware.com"></div>
-                            <span class="tool-badge premium">$60</span>
+                            <span class="tool-badge premium">Paid</span>
                             <h3>LightBurn</h3>
                             <p>Professional laser cutting software with advanced features for design, layout, and machine control.</p>
                             <ul>
@@ -543,7 +543,7 @@
                         <!-- Cults3D -->
                         <div class="resource-card">
                             <div class="tool-preview" data-url="https://cults3d.com/en"></div>
-                            <span class="tool-badge premium">Free & Premium</span>
+                            <span class="tool-badge premium">Free</span>
                             <h3>Cults3D (Laser Files)</h3>
                             <p>Independent marketplace with laser cutting files (DXF, SVG). Free and paid designs from community creators.</p>
                             <ul>
@@ -597,41 +597,6 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__section">
-                    <h3>Maker Station</h3>
-                    <p>Equipment & Tools Hub<br>
-                    Creative Technology Resources</p>
-                </div>
-                <div class="footer__section">
-                    <h3>Equipment</h3>
-                    <a href="laser-cutting.html">Laser Cutting</a>
-                    <a href="3d-printing.html">3D Printing</a>
-                    <a href="silhouette.html">Silhouette Machines</a>
-                    <a href="clay-printer.html">Clay Printer</a>
-                    <a href="3d-scanner.html">3D Scanner</a>
-                </div>
-                <div class="footer__section">
-                    <h3>Essential Tools</h3>
-                    <a href="https://svgnest.com/test/" target="_blank">SVGnest (Nesting)</a>
-                    <a href="https://cuttle.xyz" target="_blank">Cuttle</a>
-                    <a href="https://pattern.monster" target="_blank">Pattern Monster</a>
-                    <a href="https://www.festi.info/boxes.py/" target="_blank">Boxes.py</a>
-                    <a href="https://inkscape.org" target="_blank">Inkscape</a>
-                </div>
-                <div class="footer__section">
-                    <h3>Quick Links</h3>
-                    <a href="#nesting-tools">Nesting Tools</a>
-                    <a href="#web-generators">Generators</a>
-                    <a href="#tutorials">Tutorials</a>
-                    <a href="#advanced">Software</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
     <script src="../assets/js/script.js"></script>
     <script>
         function toggleDropdown(id) {
@@ -651,9 +616,16 @@
             section.classList.toggle('active');
         }
 
-        // Open first dropdown by default
+        // Open linked dropdown when hash is present; otherwise open introduction
         document.addEventListener('DOMContentLoaded', function() {
-            toggleDropdown('introduction');
+            const hashTarget = window.location.hash.replace('#', '');
+            const targetContent = document.getElementById(hashTarget);
+
+            if (targetContent && targetContent.classList.contains('dropdown-content')) {
+                toggleDropdown(hashTarget);
+            } else {
+                toggleDropdown('introduction');
+            }
         });
     </script>
 </body>

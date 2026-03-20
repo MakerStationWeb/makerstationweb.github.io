@@ -744,7 +744,7 @@ button:focus-visible,
 }
 
 .resource-category {
-    margin-bottom: 4rem;
+    margin-bottom: 2.75rem;
 }
 
 .resource-category h2 {
@@ -755,10 +755,10 @@ button:focus-visible,
 }
 
 .category-intro {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
-    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    padding: 1rem 1.25rem;
     background: var(--neutral-light);
     border-radius: 8px;
     border-left: 4px solid var(--accent-blue);
@@ -766,14 +766,14 @@ button:focus-visible,
 
 .resource-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 .resource-card {
     background: white;
-    padding: 2rem;
+    padding: 1.25rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px var(--shadow-light);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -787,7 +787,8 @@ button:focus-visible,
 
 .resource-card h3 {
     color: var(--text-primary);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .resource-card .tool-badge {
@@ -795,9 +796,9 @@ button:focus-visible,
     padding: 0.25rem 0.75rem;
     background: var(--primary-yellow);
     border-radius: 12px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .resource-card .tool-badge.free {
@@ -816,54 +817,46 @@ button:focus-visible,
 }
 
 .resource-card p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     color: var(--text-secondary);
-    font-size: 0.95rem;
-}
-
-.resource-card ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 1rem;
-}
-
-.resource-card ul li {
-    padding: 0.25rem 0;
-    padding-left: 1.25rem;
-    position: relative;
     font-size: 0.9rem;
 }
 
+.resource-card ul {
+    display: none;
+}
+
+.resource-card ul li {
+    display: none;
+}
+
 .resource-card ul li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--accent-blue);
+    content: none;
 }
 
 .resource-card .btn {
     margin-top: auto;
     width: 100%;
-    font-size: 0.9rem;
-    padding: 10px 20px;
+    font-size: 0.85rem;
+    padding: 9px 14px;
 }
 
 /* Tool Preview/Screenshot Area */
 .tool-preview {
     width: 100%;
-    height: 180px;
+    height: 140px;
     background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--hover-gray) 100%);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     border-radius: 8px 8px 0 0;
-    margin: -2rem -2rem 1.5rem -2rem;
+    margin: -1.25rem -1.25rem 0.9rem -1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    border-bottom: 3px solid var(--primary-yellow);
+    border-bottom: 2px solid var(--primary-yellow);
     transition: opacity 0.3s ease;
 }
 
@@ -873,6 +866,17 @@ button:focus-visible,
 
 .tool-preview.loaded {
     opacity: 1;
+}
+
+.tool-preview.missing-image {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+}
+
+.tool-preview.missing-image::before {
+    content: 'Add preview image';
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
 }
 
 /* Loading indicator */

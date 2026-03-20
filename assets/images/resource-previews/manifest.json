@@ -1,0 +1,347 @@
+[
+  {
+    "slug": "3axis-co",
+    "title": "3axis.co",
+    "url": "https://3axis.co"
+  },
+  {
+    "slug": "3d-encoder",
+    "title": "3D Encoder",
+    "url": "https://3dencoder.com/"
+  },
+  {
+    "slug": "3d-nih",
+    "title": "3D NIH",
+    "url": "https://3d.nih.gov/"
+  },
+  {
+    "slug": "3d-textures",
+    "title": "3D Textures",
+    "url": "https://3dtextures.me/"
+  },
+  {
+    "slug": "3d-wasp-app",
+    "title": "3D Wasp App",
+    "url": "https://www.app.3dwasp.com/"
+  },
+  {
+    "slug": "advanced-techniques-3dzeke",
+    "title": "Advanced Techniques (3dzeke)",
+    "url": "https://www.youtube.com/watch?v=uZYmEXP6A-o"
+  },
+  {
+    "slug": "ambient-cg",
+    "title": "Ambient CG",
+    "url": "https://ambientcg.com/"
+  },
+  {
+    "slug": "blender",
+    "title": "Blender",
+    "url": "https://www.blender.org/"
+  },
+  {
+    "slug": "blender-demo-files",
+    "title": "Blender Demo Files",
+    "url": "https://www.blender.org/download/demo-files/"
+  },
+  {
+    "slug": "blender-laser-cutting-addons",
+    "title": "Blender (Laser Cutting Addons)",
+    "url": "https://www.blender.org"
+  },
+  {
+    "slug": "blendswap",
+    "title": "BlendSwap",
+    "url": "https://www.blendswap.com/"
+  },
+  {
+    "slug": "blocklayer-templates",
+    "title": "Blocklayer Templates",
+    "url": "https://www.blocklayer.com/"
+  },
+  {
+    "slug": "boxes-py-festi-s-boxes",
+    "title": "Boxes.py (Festi's Boxes)",
+    "url": "https://www.festi.info/boxes.py/"
+  },
+  {
+    "slug": "british-museum-on-sketchfab",
+    "title": "British Museum on Sketchfab",
+    "url": "https://sketchfab.com/britishmuseum"
+  },
+  {
+    "slug": "cgtrader",
+    "title": "CGTrader",
+    "url": "https://www.cgtrader.com/"
+  },
+  {
+    "slug": "cults3d",
+    "title": "Cults3D",
+    "url": "https://cults3d.com/en"
+  },
+  {
+    "slug": "cults3d-laser-files",
+    "title": "Cults3D (Laser Files)",
+    "url": "https://cults3d.com/en"
+  },
+  {
+    "slug": "cuttle",
+    "title": "Cuttle",
+    "url": "https://cuttle.xyz"
+  },
+  {
+    "slug": "deepnest",
+    "title": "Deepnest",
+    "url": "https://www.deepnest.net/en/"
+  },
+  {
+    "slug": "drawingbots-net-tools",
+    "title": "DrawingBots.net Tools",
+    "url": "https://drawingbots.net"
+  },
+  {
+    "slug": "enabling-the-future",
+    "title": "Enabling the Future",
+    "url": "https://enablingthefuture.org/"
+  },
+  {
+    "slug": "fffuel",
+    "title": "FFFUEL",
+    "url": "https://fffuel.co"
+  },
+  {
+    "slug": "free3d",
+    "title": "Free3D",
+    "url": "https://free3d.com/"
+  },
+  {
+    "slug": "freecad-v1-0",
+    "title": "FreeCAD v1.0",
+    "url": "https://www.freecad.org"
+  },
+  {
+    "slug": "fullcontrol",
+    "title": "FullControl",
+    "url": "https://fullcontrol.xyz/"
+  },
+  {
+    "slug": "grabcad",
+    "title": "GrabCAD",
+    "url": "https://grabcad.com/library"
+  },
+  {
+    "slug": "hunyuan3d-2-5",
+    "title": "Hunyuan3D 2.5",
+    "url": "https://hunyuan-3d.com"
+  },
+  {
+    "slug": "image-to-stl",
+    "title": "Image to STL",
+    "url": "https://imagetostl.com/"
+  },
+  {
+    "slug": "inkscape",
+    "title": "Inkscape",
+    "url": "https://inkscape.org"
+  },
+  {
+    "slug": "itslitho",
+    "title": "ItsLitho",
+    "url": "https://tool.itslitho.com/"
+  },
+  {
+    "slug": "jerome-leary-s-gears",
+    "title": "Jerome Leary's Gears",
+    "url": "https://www.jeromeleary.com/gears/"
+  },
+  {
+    "slug": "lasercutmazes",
+    "title": "LaserCutMazes",
+    "url": "https://adashrod.github.io/LaserCutMazes/"
+  },
+  {
+    "slug": "librecad",
+    "title": "LibreCAD",
+    "url": "https://librecad.org"
+  },
+  {
+    "slug": "lightburn",
+    "title": "LightBurn",
+    "url": "https://lightburnsoftware.com"
+  },
+  {
+    "slug": "lightburn-nesting",
+    "title": "LightBurn Nesting",
+    "url": "https://lightburnsoftware.com"
+  },
+  {
+    "slug": "luma-ai-genie",
+    "title": "Luma AI Genie",
+    "url": "https://lumalabs.ai/genie"
+  },
+  {
+    "slug": "make-a-box",
+    "title": "Make a Box",
+    "url": "https://makeabox.io"
+  },
+  {
+    "slug": "makercase",
+    "title": "MakerCase",
+    "url": "https://www.makercase.com/"
+  },
+  {
+    "slug": "map2stl",
+    "title": "Map2STL",
+    "url": "https://map2stl.com/"
+  },
+  {
+    "slug": "maze-generator",
+    "title": "Maze Generator",
+    "url": "https://www.mazegenerator.net/"
+  },
+  {
+    "slug": "meshy-ai",
+    "title": "Meshy AI",
+    "url": "https://meshy.ai"
+  },
+  {
+    "slug": "morphosource",
+    "title": "MorphoSource",
+    "url": "https://www.morphosource.org/"
+  },
+  {
+    "slug": "nasa-3d-models",
+    "title": "NASA 3D Models",
+    "url": "https://nasa3d.arc.nasa.gov/"
+  },
+  {
+    "slug": "openscad",
+    "title": "OpenSCAD",
+    "url": "https://openscad.org"
+  },
+  {
+    "slug": "pattern-monster",
+    "title": "Pattern Monster",
+    "url": "https://pattern.monster"
+  },
+  {
+    "slug": "patternpad",
+    "title": "PatternPad",
+    "url": "https://patternpad.com"
+  },
+  {
+    "slug": "poly-haven-models",
+    "title": "Poly Haven Models",
+    "url": "https://polyhaven.com/models"
+  },
+  {
+    "slug": "poly-haven-textures",
+    "title": "Poly Haven Textures",
+    "url": "https://polyhaven.com/textures"
+  },
+  {
+    "slug": "potterware",
+    "title": "Potterware",
+    "url": "https://potterware.com"
+  },
+  {
+    "slug": "printables",
+    "title": "Printables",
+    "url": "https://www.printables.com/"
+  },
+  {
+    "slug": "prusaslicer",
+    "title": "PrusaSlicer",
+    "url": "https://www.prusa3d.com/page/prusaslicer_424/"
+  },
+  {
+    "slug": "scan-the-world",
+    "title": "Scan the World",
+    "url": "https://www.myminifactory.com/scantheworld/"
+  },
+  {
+    "slug": "smithsonian-3d",
+    "title": "Smithsonian 3D",
+    "url": "https://3d.si.edu/"
+  },
+  {
+    "slug": "spline-ai",
+    "title": "Spline AI",
+    "url": "https://spline.design/ai-generate"
+  },
+  {
+    "slug": "stencilfy",
+    "title": "Stencilfy",
+    "url": "https://stencilfy.onrender.com/"
+  },
+  {
+    "slug": "stl-gears-generator",
+    "title": "STL Gears Generator",
+    "url": "https://www.stlgears.com/"
+  },
+  {
+    "slug": "svgnest",
+    "title": "SVGnest",
+    "url": "https://svgnest.com/test/"
+  },
+  {
+    "slug": "template-maker",
+    "title": "Template Maker",
+    "url": "https://www.templatemaker.nl"
+  },
+  {
+    "slug": "thingiverse",
+    "title": "Thingiverse",
+    "url": "https://www.thingiverse.com/"
+  },
+  {
+    "slug": "trellis-microsoft",
+    "title": "TRELLIS (Microsoft)",
+    "url": "https://microsoft.github.io/TRELLIS"
+  },
+  {
+    "slug": "tripo-v2-5",
+    "title": "Tripo v2.5",
+    "url": "https://tripo3d.ai"
+  },
+  {
+    "slug": "turbosquid",
+    "title": "TurboSquid",
+    "url": "https://www.turbosquid.com"
+  },
+  {
+    "slug": "vecty-co",
+    "title": "Vecty.co",
+    "url": "https://vecty.co"
+  },
+  {
+    "slug": "voronator",
+    "title": "Voronator",
+    "url": "https://www.voronator.com/"
+  },
+  {
+    "slug": "voronoi-editor",
+    "title": "Voronoi Editor",
+    "url": "https://voronoi-editor.web.app/"
+  },
+  {
+    "slug": "workshop-video-1",
+    "title": "Workshop Video 1",
+    "url": "https://www.youtube.com/watch?v=AXhUighWpUw"
+  },
+  {
+    "slug": "workshop-video-2",
+    "title": "Workshop Video 2",
+    "url": "https://www.youtube.com/watch?v=l59lwwpP1-U"
+  },
+  {
+    "slug": "workshop-video-3",
+    "title": "Workshop Video 3",
+    "url": "https://www.youtube.com/watch?v=nVqNfx3UowE"
+  },
+  {
+    "slug": "workshop-video-4",
+    "title": "Workshop Video 4",
+    "url": "https://www.youtube.com/watch?v=PzpDSQ3PSS8"
+  }
+]

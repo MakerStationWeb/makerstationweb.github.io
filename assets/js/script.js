@@ -67,50 +67,82 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Tool preview handling - using Screenshot API
+    // Tool preview handling - static local images
     const toolPreviews = document.querySelectorAll('.tool-preview');
-    const API_TOKEN = 'BT9EB4K-JJ14EHG-KZ4HZ5X-QZ8QK32';
-    const SCREENSHOT_WIDTH = 800;
-    const SCREENSHOT_HEIGHT = 450;
+    const PREVIEW_DIRECTORY = 'assets/images/resource-previews';
 
-    toolPreviews.forEach(preview => {
-        const targetUrl = preview.getAttribute('data-url');
+    function slugify(text) {
+        return text
+            .toLowerCase()
+            .replace(/&/g, ' and ')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+    }
 
-        // Skip if no URL or placeholder
-        if (!targetUrl || targetUrl === 'about:blank') {
+    function buildPreviewPath(fileName) {
+        const inPagesDirectory = window.location.pathname.includes('/pages/');
+        const basePrefix = inPagesDirectory ? '../' : '';
+        return `${basePrefix}${PREVIEW_DIRECTORY}/${fileName}`;
+    }
+
+    function findImageCandidates(preview) {
+        const candidates = [];
+        const explicitImage = preview.getAttribute('data-image');
+
+        if (explicitImage) {
+            candidates.push(explicitImage);
+        }
+
+        const card = preview.closest('.resource-card');
+        const title = card ? card.querySelector('h3') : null;
+        const slug = title ? slugify(title.textContent || '') : '';
+
+        if (slug) {
+            candidates.push(buildPreviewPath(`${slug}.webp`));
+            candidates.push(buildPreviewPath(`${slug}.png`));
+            candidates.push(buildPreviewPath(`${slug}.jpg`));
+            candidates.push(buildPreviewPath(`${slug}.jpeg`));
+        }
+
+        return candidates;
+    }
+
+    function tryLoadPreviewImage(preview, candidates, index) {
+        if (index >= candidates.length) {
+            preview.classList.remove('loading');
+            preview.classList.add('missing-image');
             return;
         }
 
-        // Add loading state
-        preview.classList.add('loading');
+        const imagePath = candidates[index];
+        const image = new Image();
 
-        // Encode the target URL
-        const encodedUrl = encodeURIComponent(targetUrl);
-
-        // Build screenshot API URL
-        const screenshotUrl = `https://shot.screenshotapi.net/v3/screenshot?token=${API_TOKEN}&url=${encodedUrl}&width=${SCREENSHOT_WIDTH}&height=${SCREENSHOT_HEIGHT}&output=image&file_type=png&no_cookie_banners=true&wait_for_event=load`;
-
-        // Create an image to preload the screenshot
-        const img = new Image();
-
-        img.onload = () => {
-            // Set as background image
-            preview.style.backgroundImage = `url('${screenshotUrl}')`;
+        image.onload = () => {
+            preview.style.backgroundImage = `url('${imagePath}')`;
             preview.classList.remove('loading');
+            preview.classList.remove('missing-image');
             preview.classList.add('loaded');
         };
 
-        img.onerror = () => {
-            // Keep gradient background on error
-            preview.classList.remove('loading');
-            console.warn(`Failed to load screenshot for: ${targetUrl}`);
+        image.onerror = () => {
+            tryLoadPreviewImage(preview, candidates, index + 1);
         };
 
-        // Start loading
-        img.src = screenshotUrl;
+        image.src = imagePath;
+    }
+
+    toolPreviews.forEach(preview => {
+        const candidates = findImageCandidates(preview);
+
+        if (!candidates.length) {
+            return;
+        }
+
+        preview.classList.add('loading');
+        tryLoadPreviewImage(preview, candidates, 0);
     });
 
-    console.log(`Initialized ${toolPreviews.length} tool preview cards with Screenshot API`);
+    console.log(`Initialized ${toolPreviews.length} tool preview cards with local images`);
 });
 
 // Smooth scrolling for anchor links
